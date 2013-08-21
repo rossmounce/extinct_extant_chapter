@@ -1,8 +1,0 @@
-sed -i 's/\s/,/g' *.nex
-sed -i 's/)(/),(/g' *.nex
-sed -i 's/,)/)/g' *.nex
-sed -i '/from TNT/d' *.nex
-sed -i '/from,TNT/d' *.nex
-sed -i '/proc\/;/d' *.nex
-
-mmv "j*.nex" "jack#1.tre" 
