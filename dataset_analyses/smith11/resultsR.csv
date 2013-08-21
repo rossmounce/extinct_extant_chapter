@@ -1,0 +1,59 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PD"	"Diff MPTs"	"MPTs"	26	"RF"	"PD"	"Diff MPTs"
+1	"R"	"Cwilsonia"	28.25	112.4273540669	-10	16	"fossil"	7.3473258898	30.6018851482	7
+2	"R"	"Aethia_cristatella"	1.2	6.3498031466	-16	10	"recent"	9.9100391405	44.8654872966	54.7692307692
+3	"R"	"Aethia_pygmaea"	0	0	-14	12				
+4	"R"	"Aethia_psittacula"	1	5.2915026221	-22	4				
+5	"R"	"Aethia_pusilla"	9.4146341463	42.5110237793	15	41				
+6	"R"	"Ptychoramphusaleuticus"	1.4545454545	7.572564542	-4	22				
+7	"R"	"Cerorhincamonocerata"	0	0	-24	2				
+8	"R"	"F_arctica"	0	0	-24	2				
+9	"R"	"Fcorniculata"	0	0	-16	10				
+10	"R"	"Fcirrhata"	0	0	-16	10				
+11	"R"	"Alca_torda"	13.0909090909	60.4968981307	18	44				
+12	"R"	"Pinguinusimpennis"	30.5	132.1362604993	-18	8				
+13	"R"	"Alle_alle"	2	7.9721738287	-23	3				
+14	"R"	"Uria_aalge"	0	0	-19	7				
+15	"R"	"Uria_lomvia"	13.0909090909	59.9430067171	18	44				
+16	"R"	"Ce_carbo"	22.5277777778	108.7546286504	46	72				
+17	"R"	"Ce_columba"	23.3301886792	103.1071211579	186	212				
+18	"R"	"Ce_grylle"	0.2307692308	1.3081247334	0	26				
+19	"R"	"Bbrevirostris"	0.2222222222	1.1758894716	-17	9				
+20	"R"	"Bmarmoratus"	0.1538461538	0.8140773265	-13	13				
+21	"R"	"Bperdix"	0.3076923077	1.628154653	-13	13				
+22	"R"	"Shusantiquus"	0.3076923077	1.7863828534	0	26				
+23	"R"	"Shuswumizusume"	0.25	1.4642648639	-10	16				
+24	"R"	"Shuscraveri"	15.4230769231	64.3736995836	26	52				
+25	"R"	"Shushypoleucus"	0	0	-12	14				
+26	"R"	"Slongicaudus"	2.35	11.6943461251	14	40				
+27	"R"	"S_skua"	8.2307692308	29.809047572	0	26				
+28	"R"	"Anous_tenuirostris"	18.5789473684	94.5180656134	316	342				
+29	"R"	"Chlidoniasleucoptera"	0.2	1.0583005244	-6	20				
+30	"R"	"Sterna_niloteca"	26.25	113.0407006202	46	72				
+31	"R"	"Larosterna_inca"	20.537037037	103.8911014026	82	108				
+32	"R"	"Sterna_maxima"	22.6185185185	111.6948497687	514	540				
+33	"R"	"Phaetusa_simplex"	18.7023809524	94.7330554515	142	168				
+34	"R"	"Sternulasuperciliaris"	20.7619047619	77.8482589891	310	336				
+35	"R"	"Sternaanaethetus"	19.6530612245	98.7280858565	170	196				
+36	"R"	"Gygis_alba"	20	91.8136759087	108	134				
+37	"R"	"Rynchops_niger"	16.1764705882	66.2388249156	144	170				
+38	"R"	"Creagrus_furcatus"	22.3789473684	97.3703006657	164	190				
+39	"R"	"Rhodostethiarosea"	1.15	7.7837359504	14	40				
+40	"R"	"Larus_argentatus"	2.0833333333	12.4789411329	22	48				
+41	"R"	"Larus_marinus"	0.1	0.5291502622	-6	20				
+42	"R"	"Pagophilaeburnea"	23.625	49.0354317344	6	32				
+43	"R"	"Xema_sabini"	0.1538461538	0.8140773265	0	26				
+44	"R"	"Rissa_tridactyla"	21.6754385965	102.0033803697	430	456				
+45	"R"	"Cusoriustemmneckii"	16.0416666667	96.1317093165	22	48				
+46	"R"	"Glareolamaldivarum"	4.2	13.3386533102	-6	20				
+47	"R"	"Stiltia_isabella"	32.140625	131.2295193154	102	128				
+48	"R"	"Rhinoptiluschalcopterus"	0.1538461538	0.8140773265	0	26				
+49	"R"	"Bartramialongicauda"	13.6923076923	95.083323278	78	104				
+50	"R"	"Numeniusminutus"	15.6612903226	72.6452155395	98	124				
+51	"R"	"Tryngitessubruficollis"	0	0	-12	14				
+52	"R"	"Hydrophasianuschirurgus"	5.4523809524	39.566580519	58	84				
+53	"F "	"FMcaliforniensis"	0.1538461538	0.972305527	0	26				
+54	"F "	"FMcedrosensis"	0	0	-21	5				
+55	"F "	"FM_lucasi"	0.0769230769	0.4070386632	0	26				
+56	"F "	"FMvegrandis"	6.5348837209	31.8856820606	60	86				
+57	"F "	"FMiomhowardi"	35.2413793103	139.5946784595	3	29				
+58	"F "	"FMiomwetmorei"	2.0769230769	10.751606179	0	26				

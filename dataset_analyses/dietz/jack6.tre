@@ -1,0 +1,8 @@
+(fossilLept,(((((Alepisauru,Notolepis),((fossilBery,(Melamphaes,Polymixia)),fossilSard)),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),fossilNeoc),fossilBeck),((Chauliodus,Vinciguerr),fossilTele));
+(fossilLept,(((((((Alepisauru,Notolepis),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),fossilNeoc),fossilSard),(fossilBery,(Melamphaes,Polymixia))),fossilBeck),(fossilTele,Vinciguerr)),Chauliodus);
+(fossilLept,((((Alepisauru,Notolepis),((fossilBery,(Melamphaes,Polymixia)),((((Electrona,Lampadena),Neoscopelu),Scopelengy),fossilSard))),fossilNeoc),fossilBeck),((Chauliodus,Vinciguerr),fossilTele));
+(fossilLept,((((((Alepisauru,Notolepis),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),fossilNeoc),fossilSard),(fossilBery,(Melamphaes,Polymixia))),fossilBeck),((Chauliodus,Vinciguerr),fossilTele));
+(fossilLept,((((Alepisauru,Notolepis),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),((fossilBeck,fossilNeoc),fossilSard)),(fossilBery,(Melamphaes,Polymixia))),((Chauliodus,Vinciguerr),fossilTele));
+(fossilLept,(((((((Alepisauru,Notolepis),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),fossilNeoc),fossilSard),(fossilBery,(Melamphaes,Polymixia))),fossilBeck),Vinciguerr),(Chauliodus,fossilTele));
+(fossilLept,(((((Alepisauru,Notolepis),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),((fossilBery,(Melamphaes,Polymixia)),fossilSard)),fossilNeoc),fossilBeck),((Chauliodus,Vinciguerr),fossilTele));
+(fossilLept,((((((Alepisauru,Notolepis),(((Electrona,Lampadena),Neoscopelu),Scopelengy)),fossilNeoc),fossilSard),fossilBeck),(fossilBery,(Melamphaes,Polymixia))),((Chauliodus,Vinciguerr),fossilTele));

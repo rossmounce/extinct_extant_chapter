@@ -1,0 +1,30 @@
+Order	Fossil/Recent	Taxa	RF	PD	Diff MPTs	MPTs	16	RF	PD	Diff MPTs
+1	R	Heterodontus	7.125	17.865938734	0	16	fossil	5.7415823538	15.1651480446	0.7272727273
+2	R	Orectolobiformes	9.75	21.0800922052	16	32	recent	7.5248842593	18.1644806765	16.8888888889
+3	R	Lamniformes	6.7916666667	18.6204497728	32	48				
+4	R	Carcharhiniformes	7	16.846024615	16	32				
+5	R	Chlamydoselachus	8.9166666667	21.7342826065	32	48				
+6	R	Hexanchus	6.9375	18.0596945028	16	32				
+7	R	Notorynchus	6.375	16.6038700874	16	32				
+8	R	Heptranchias	6.875	16.0782121898	0	16				
+9	R	Echinorhinus	10.6875	22.7760372894	16	32				
+10	R	Etmopteridae	5.875	16.3620292388	0	16				
+11	R	Somniosidae	8.2916666667	19.1769570838	32	48				
+12	R	Oxynotus	8.2916666667	17.8155563625	32	48				
+13	R	Dalatiinae	6.75	17.2379228679	16	32				
+14	R	Euprotomicrininae	6.375	16.1597079385	16	32				
+15	R	Centrophoridae	10.46875	22.529954374	48	64				
+16	R	Squalidae	6.5	15.7467078848	0	16				
+17	R	Squatina	5.75	15.1445495848	0	16				
+18	R	Pristiophoridae	6.6875	17.1226648386	16	32				
+19	F 	Welcommia	6	15.2532945674	0	16				
+20	F 	Pseudonotidanus	7.6170212766	17.7723008762	31	47				
+21	F 	Rhomphaiodon	4.625	12.8005084391	0	16				
+22	F 	Mucrovenator	4.4	13.8635761921	-11	5				
+23	F 	Sphenodus	4.25	12.3743804965	0	16				
+24	F 	pre_Jurassic_Synechodus	4	13.2926902894	0	16				
+25	F 	Palidiplospinax	7.2	17.5982538196	-11	5				
+26	F 	Synechodus_prorogatus	5.25	15.8366676784	0	16				
+27	F 	Synechodus	5	12.7182326137	0	16				
+28	F 	Paraorthacodus	7.6153846154	18.9369846871	10	26				
+29	F 	Macrourogaleus	7.2	16.3697388308	-11	5				

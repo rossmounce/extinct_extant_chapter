@@ -1,0 +1,9 @@
+(hypothetic,Praeichneu,((Eoichneumo,(((Aenigmabra,((((Apozyginae,Rhyssalina),Aphidiinae),Prorhyssal),Protorhyss)),Noncyclost),Trachypeti)),(Tanychora,((Tanychorel,Xoridinae),(Hybrizonti,Other_Ichn)))));
+(hypothetic,Praeichneu,(((((Eoichneumo,(((Aenigmabra,((((Apozyginae,Rhyssalina),Aphidiinae),Prorhyssal),Protorhyss)),Noncyclost),Trachypeti)),Hybrizonti),Other_Ichn),(Tanychorel,Xoridinae)),Tanychora));
+(hypothetic,Praeichneu,(((((Eoichneumo,(((((Aenigmabra,Prorhyssal),Protorhyss),((Apozyginae,Rhyssalina),Aphidiinae)),Noncyclost),Trachypeti)),Hybrizonti),(Tanychorel,Other_Ichn)),Xoridinae),Tanychora));
+(hypothetic,Praeichneu,((((((Eoichneumo,(((((Aenigmabra,Protorhyss),Prorhyssal),((Apozyginae,Rhyssalina),Aphidiinae)),Noncyclost),Trachypeti)),Hybrizonti),Other_Ichn),Tanychorel),Xoridinae),Tanychora));
+(hypothetic,Praeichneu,(((((Eoichneumo,(((((Aenigmabra,Protorhyss),Prorhyssal),((Apozyginae,Rhyssalina),Aphidiinae)),Noncyclost),Trachypeti)),Hybrizonti),Other_Ichn),(Tanychorel,Xoridinae)),Tanychora));
+(hypothetic,Praeichneu,(((Eoichneumo,(((Aenigmabra,(((Apozyginae,Rhyssalina),Aphidiinae),(Protorhyss,Prorhyssal))),Noncyclost),Trachypeti)),Tanychora),(((Tanychorel,Other_Ichn),Hybrizonti),Xoridinae)));
+(hypothetic,Praeichneu,(((((Eoichneumo,(((Aenigmabra,((((Apozyginae,Rhyssalina),Aphidiinae),Prorhyssal),Protorhyss)),Noncyclost),Trachypeti)),Hybrizonti),(Tanychorel,Other_Ichn)),Xoridinae),Tanychora));
+(hypothetic,Praeichneu,((((((Eoichneumo,(((Aenigmabra,(((Apozyginae,Rhyssalina),Aphidiinae),(Protorhyss,Prorhyssal))),Noncyclost),Trachypeti)),Hybrizonti),Other_Ichn),Tanychorel),Xoridinae),Tanychora));
+(hypothetic,Praeichneu,((Eoichneumo,(((Aenigmabra,((((Apozyginae,Rhyssalina),Aphidiinae),Prorhyssal),Protorhyss)),Noncyclost),Trachypeti)),(Tanychora,((Tanychorel,(Hybrizonti,Other_Ichn)),Xoridinae))));

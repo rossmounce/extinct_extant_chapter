@@ -1,0 +1,992 @@
+#NEXUS
+
+[ File output by Morphobank v2 (http://www.morphobank.org); 2009-11-2 14.25.20 ]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=21;
+	TAXLABELS
+		'Asioryctes'
+		'Purgatorius'
+		'Palaechthon'
+		'Paromomyidae'
+		'Chronolestes'
+		'Carpolestidae'
+		'Plesiadapidae'
+		'Saxonellidae'
+		'Microsyopidae'
+		'Micromomyidae'
+		'Altiatlasius'
+		'Altanius'
+		'Omomyidae'
+		'Adapidae'
+		'Elpidophorus'
+		'Plagiomene'
+		'Cynocephalidae'
+		'Ptilocercus'
+		'Tupaia'
+		'Chiroptera'
+		'Berruvius'
+	;
+ENDBLOCK;
+
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=173;
+	FORMAT DATATYPE=STANDARD MISSING=? GAP=- SYMBOLS="0123456";
+
+	CHARLABELS
+		 [1] 'd35_Upper_fourth_premolar_(P4)_metastyle'
+		 [2] 'd36_Upper_third_premolar_(P3)_parastyle'
+		 [3] 'd37_Upper_fourth_premolar_(P4)_parastyle'
+		 [4] 'd38_Upper_fourth_premolar_(P4)_hypocone'
+		 [5] 'd39_Upper_third_premolar_(P3)_crown_shape_index_(buccal_length_lingual_length)'
+		 [6] 'd11_Upper_canine_(C1)'
+		 [7] 'd12_Lower_first_premolar_(p1)'
+		 [8] '13d_Lower_second_premolar_(p2)'
+		 [9] 'd14_Lower_third_premolar_(p3)_roots'
+		 [10] 'd17_Mesiodistal_crown-length_of_lower_fourth_premolar_(p4)'
+		 [11] 'd18_Lower_fourth_premolar_(p4)_talonid_basin'
+		 [12] 'd19_Lower_fourth_premolar_(p4)_talonid_cusps'
+		 [13] 'd20_Lower_fourth_premolar_(p4)_cristid_obliqua'
+		 [14] 'd21_Lower_fourth_premolar_(p4)_hypoflexid'
+		 [15] 'd22_Lower_fourth_premolar_(p4)_paraconid'
+		 [16] 'd23_Lower_fourth_premolar_(p4)_metaconid'
+		 [17] 'd24_Crest_between_the_protoconid_and_cristid_obliqua_on_the_Lower_fourth_premolar_(p4)_'
+		 [18] 'd25_Lower_fourth_premolar_(p4)_crown_exodaenodonty'
+		 [19] 'd26_Lower_first_molar_(m1)_crown_exodaenodonty'
+		 [20] 'd27_Upper_third_premolar_(P3)_protocone'
+		 [21] 'd28_Upper_third_premolar_(P3)_conules'
+		 [22] 'd29_Upper_third_premolar_(P3)_preparaconule_crista_'
+		 [23] 'd30_Upper_fourth_premolar_(P4)_conules'
+		 [24] 'd31_Upper_fourth_premolar_(P4)_intermediate_ridge_'
+		 [25] 'd32_Upper_third_premolar_(P3)_metacone'
+		 [26] 'd33_Upper_third_premolar_(P3)_metastyle'
+		 [27] 'd34_Upper_fourth_premolar_(P4)_metacone'
+		 [28] 'ps65_Metatarsal_I_torsion'
+		 [29] 'ps63_Height_of_ridges_on_the_patellar_groove_on_the_femur_'
+		 [30] 'ps64_Prehensile_hand_proportions_'
+		 [31] 'ps62_Proximal_end_of_fibula'
+		 [32] 'ps61_Third_trochanter_on_the_femur_'
+		 [33] 'ps59_Thoracic_spinous_processes_'
+		 [34] 'ps60_Lumbar_transverse_processes_'
+		 [35] 'ps55_Anterior_inferior_iliac_spine'
+		 [36] 'ps56_Ribs_craniocaudal_width'
+		 [37] 'ps57_Atlas_craniocaudal_width_'
+		 [38] 'ps58_Axis_spinous_process_orientation_'
+		 [39] 'ps53_Ilium_'
+		 [40] 'ps54_Pubic_symphysis_'
+		 [41] 'ps51_Peroneal_process_on_metatarsal_I_'
+		 [42] 'ps52_Medial_process_of_metatarsal_I_'
+		 [43] 'ps49_Manual_proximal_phalanges_'
+		 [44] 'ps50_Metatarsal_I_facet_on_the_entocuneiform_'
+		 [45] 'ps47_Manual_intermediate_phalanges'
+		 [46] 'ps48_Non-hallucal_terminal_phalanges_'
+		 [47] 'ps45_Capitular_tail_on_humerus_'
+		 [48] 'ps46_Cross-sectional_shape_of_the_radial_shaft_'
+		 [49] 'ps43_Brachial_index_[_=_(radius_length_humerus_length)*100]_'
+		 [50] 'ps44_Centrale_'
+		 [51] 'ps42_Humerofemoral_index_[_=_(humerus_length_femoral_length)*100)]_'
+		 [52] 'ps41_Tibial_plateau_'
+		 [53] 'ps39_Tibial_tuberosity_'
+		 [54] 'ps40_Medial_malleolus_on_tibia_'
+		 [55] 'ps38_Trochanteric_fossa_on_the_femur_'
+		 [56] 'ps37_Distal_femur_'
+		 [57] 'ps35_Third_trochanter_on_the_femur_'
+		 [58] 'ps36_Patellar_groove_on_the_femur_'
+		 [59] 'ps30_Plantodistal_process_on_the_entocuneiform_'
+		 [60] 'ps31_Acetabular_shape_'
+		 [61] 'ps32_Pattern_of_acetabular_bony_buttressing_'
+		 [62] 'ps33_Greater_trochanter_on_the_femur_'
+		 [63] 'ps34_Lesser_trochanter_on_the_femur_'
+		 [64] 'ps28_Calcaneocuboid_articulation_with_distal_calcaneus_'
+		 [65] 'ps29_Distal_end_of_calcaneus'
+		 [66] 'ps23_Groove_for_m._flexor_fibularis_'
+		 [67] 'ps24_Groove_on_astragalar_body_'
+		 [68] 'ps25_Height_of_the_borders_of_the_astragalar_trochlea_'
+		 [69] 'ps26_Length_of_astragalar_neck_'
+		 [70] 'ps27_Secondary_articulation_between_the_posterior_side_of_the_sustentaculum_tali_and_the_astragalus_'
+		 [71] 'ps21_Nails_'
+		 [72] 'ps22_Flexor_sheath_ridges_on_the_manual_proximal_phalanges'
+		 [73] 'ps16_Ulnocarpal_articulation_'
+		 [74] 'ps17_Olecranon_process_of_ulna_'
+		 [75] 'ps18_Distal_radioulnar_articulation_'
+		 [76] 'ps19_Scaphoid_and_lunate_'
+		 [77] 'ps20_Relative_length_of_the_intermediate_phalanges'
+		 [78] 'ps14_Lateral_lip_on_the_radial_head_'
+		 [79] 'ps15_)._Ridge_on_the_distal_end_of_the_anterior_radius_'
+		 [80] 'ps12_Shape_of_radial_head_'
+		 [81] 'ps13_Radial_head_central_fossa'
+		 [82] 'ps11_Bicipital_tuberosity_on_radius_'
+		 [83] 'ps10_Trochlea_of_humerus_'
+		 [84] 'ps8_Capitulum_of_humerus_'
+		 [85] 'ps9_Attachment_for_m._teres_major_on_humerus_'
+		 [86] 'ps6_Breadth_of_medial_epicondyle_(_=_entepicondyle)_of_humerus_'
+		 [87] 'ps7_Supinator_crest_of_humerus_'
+		 [88] 'ps5_Radial_and_or_olecranon_fossa_of_humerus_'
+		 [89] 'ps4_Deltopectoral_crest_of_humerus_'
+		 [90] 'ps3_Deltopectoral_crest_of_humerus_'
+		 [91] 'ps2_Lesser_tuberosity_on_humerus_'
+		 [92] 'c23_Cochlear_window_'
+		 [93] 'c24_Orientation_of_the_fenestra_rotunda_(_=_cochlear_window)'
+		 [94] 'c25_Septae_in_the_middle_ear_cavity_formed_by_the_entotympanic'
+		 [95] 'c26_Fattened_area_on_medial_promontorium'
+		 [96] 'ps1_Greater_tuberosity_on_humerus_'
+		 [97] 'c18_Contact_between_lacrimal_and_palatine_in_the_orbit'
+		 [98] 'c19_Lacrimal_tubercle'
+		 [99] 'c20_Size_of_the_optic_foramen'
+		 [100] 'c21_Foramen_rotundum'
+		 [101] 'c22_Position_of_the_lacrimal_foramen'
+		 [102] 'c16_Nasal_flare'
+		 [103] 'c17_Diameter_of_the_infraorbital_foramen'
+		 [104] 'c14_Number_of_pterygoid_plates'
+		 [105] 'c15_Supraorbital_foramen'
+		 [106] 'c12_Number_of_jugular_(_=_posterior_lacerate)_foramina'
+		 [107] 'c13_Position_of_the_caudal_midsagittal_margin_of_the_palate'
+		 [108] 'c7_Subsquamosal_foramen'
+		 [109] 'c8_Width_of_the_central_stem_and_relative_size_of_the_hypotympanic_sinus'
+		 [110] 'c9_Cranial_and_snout_proportions,_'
+		 [111] 'c10_Presence_of_a_postorbital_bar'
+		 [112] 'c11_Presence_of_a_mastoid_process'
+		 [113] 'c5_Presence_of_branches_of_the_internal_carotid_artery_(ICA)'
+		 [114] 'c6_Posterior_carotid_foramen_position_(or_the_position_of_the_entry_of_the_internal_carotid_artery_and_or_nerves_into_the_middle_ear)'
+		 [115] 'c3_Form_of_the_External_Auditory_Meatus_(EAM)'
+		 [116] 'c4_Presence_of_a_subtympanic_recess_(between_the_tympanic_ring_and_the_bulla)'
+		 [117] 'c1_Structure_of_the_auditory_bulla'
+		 [118] 'c2_Relations_of_the_entotympanic'
+		 [119] 'd81_Presence_of_one_or_more_mesostyle(s)_on_the_upper_molars'
+		 [120] 'd82_Orientation_of_the_preparacrista_on_M1-2'
+		 [121] 'd79_Upper_molar_centrocrista'
+		 [122] 'd80_M1_parastylar_lobe_'
+		 [123] 'd77_M1-2_precingulum_'
+		 [124] 'd78_Upper_molar_post-_and_metacingula'
+		 [125] 'd75_M1-2_hypocone_'
+		 [126] 'd76_M1-2_protocone_position_'
+		 [127] 'd73_M1-2_metaconules'
+		 [128] 'd74_Relative_sizes_of_metacone_and_paracone_on_M1-2'
+		 [129] 'd68_Relative_size_of_upper_third_molar_(M3)'
+		 [130] 'd69_Relative_length_of_of_lower_third_molar_(m3)'
+		 [131] 'd70_Stylar_shelf_of_upper_molars_'
+		 [132] 'd71_M1_or_M2_postprotocingulum_'
+		 [133] 'd72_Position_of_M1-2_conules_'
+		 [134] 'd63_Talonid_of_lower_molars'
+		 [135] 'd64_Lower_first_molar_(m1)_protoconid'
+		 [136] 'd65_Curving_lower_molar_paracristids'
+		 [137] 'd66_)._Stepped_postvallid_on_lower_first_molar_(m1)'
+		 [138] 'd67_Upper_and_or_lower_molar_cusps_'
+		 [139] 'd61_Breadth_of_the_lower_third_molar_(m3)_talonid'
+		 [140] 'd62_Size_of_the_lower_third_molar_(m3)_hypoconulid'
+		 [141] 'd56_Lower_first_and_second_molars_(m1-2)_entoconid_notch_(between_the_entoconid_and_hypoconulid)'
+		 [142] 'd57_Lower_first_and_second_molars_(m1-2)_hypoconulid_notch_(between_the_hypoconulid_and_hypoconid)'
+		 [143] 'd58_Mesial_inflection_of_the_lower_molar_trigonids'
+		 [144] 'd59_Basal_breadth_of_lower_first_and_second_molar_(m1-2)_trigonids'
+		 [145] 'd60_Breadth_of_lower_first_and_second_molar_(m1-2)_talonids_near_the_apices_of_the_cusps'
+		 [146] 'd54_Lower_molar_enamel'
+		 [147] 'd55_Lower_first_and_second_molars_(m1-2)_state_of_hypoconulid_and_entoconid'
+		 [148] 'd52_Lower_molar_paraconid_height'
+		 [149] 'd53_d52_Lower_molar_paraconid_expression'
+		 [150] 'd49_Lower_molars_height'
+		 [151] 'd50_Lower_molar_buccal_cingulids'
+		 [152] 'd51_Lower_molar_trigonid_lengths'
+		 [153] 'd45_Upper_fourth_premolar_(P4)_postprotocrista'
+		 [154] 'd41_Relative_size_of_P3_compared_to_P4_crown_area'
+		 [155] 'd47_Upper_fourth_premolar_(P4)_protocone_lobe'
+		 [156] 'd44_Upper_fourth_premolar_(P4)_preprotocrista'
+		 [157] 'd46_Upper_fourth_premolar_(P4)_parastylar_lobe'
+		 [158] 'd40_Upper_fourth_premolar_(P4)_shape_index_(buccal_length_lingual_length)'
+		 [159] 'd43_Upper_fourth_premolar_(P4)_postprotocingulum'
+		 [160] 'd42_Relative_size_of_P4_compared_to_M1_crown_area'
+		 [161] 'd48_Trigonid_height_on_the_lower_first_and_second_moars_(m1-2)'
+		 [162] 'd9_Accessory_cuspules_on_first_upper_incisor_(I1)_crown'
+		 [163] 'd10_Lower_canine_(c1)'
+		 [164] 'd7_Margoconid_on_first_lower_incisor_(i1)_crown'
+		 [165] 'd8_Size_of_first_upper_incisor_(I1)_crown'
+		 [166] 'd5_Orientation_of_first_lower_incisor_(i1)_crown'
+		 [167] 'd6_Form_of_first_lower_incisor_(i1)_crown'
+		 [168] 'd3_Third_upper_incisor_(I3)'
+		 [169] 'd4_Size_of_first_lower_incisor_(i1)_crown'
+		 [170] 'd1_Third_lower_incisor_(i3)'
+		 [171] 'd2_Second_lower_incisor_(i2)'
+		 [172] 'd15_Upper_first_premolar_(P1)'
+		 [173] 'd16_Upper_second_premolar_(P2)'
+	;
+	
+	STATELABELS
+		1
+		'present'
+		'absent'
+		,
+		2
+		'present'
+		'absent'
+		,
+		3
+		'present'
+		'absent'
+		,
+		4
+		'absent'
+		'present'
+		,
+		5
+		'_2.0'
+		'1.8-2.0'
+		'_1.7'
+		,
+		6
+		'double-rooted'
+		'single-rooted'
+		'absent'
+		,
+		7
+		'present'
+		'absent'
+		,
+		8
+		'double-rooted'
+		'single-rooted'
+		'absent'
+		,
+		9
+		'double-rooted'
+		'single-rooted'
+		,
+		10
+		'somewhat_smaller_than_that_of_the_lower_first_molar_(m1)_'
+		'subequal_to_that_of_m1'
+		'p4_m1'
+		'm1_p4'
+		,
+		11
+		'not-basined'
+		'basined'
+		,
+		12
+		'one_distinct_cusp'
+		'all_cusps_poorly_defined'
+		'two_well-defined_cusps'
+		'three_well-defined_cusps'
+		,
+		13
+		'joins_postvallid_near_midline_of_tooth_or_more_lingually'
+		'joins_postvallid_near_buccal_margin_of_trigonid'
+		'absent'
+		,
+		14
+		'deep_and_distinct'
+		'shallow_and_not_distinct'
+		,
+		15
+		'indistinct_with_a_short_paracristid_present_'
+		'distinct_and_cuspate_'
+		'paraconid_and_paracristid_absent_or_weak'
+		,
+		16
+		'absent'
+		'present'
+		,
+		17
+		'present_and_continuous'
+		'present_but_not_continuous_from_the_postvallid_to_the_cristid_obliqua'
+		'absent_with_no_comparable_crest_on_the_postvallid'
+		,
+		18
+		'not_exodaenodont_with_no_lobe_development_'
+		'slightly_exodaenodont_with_a_little_lobe_development_'
+		'moderately_exodaenodont_with_the_distal_lobe_developed_more_than_the_mesial_lobe'
+		,
+		19
+		'not_exodaenodont_'
+		'exodaenodont'
+		,
+		20
+		'present'
+		'absent'
+		,
+		21
+		'absent'
+		'one_present'
+		'two_present'
+		,
+		22
+		'absent'
+		'present'
+		,
+		23
+		'absent'
+		'one_large_conule_present_'
+		'one_small_paraconule_present_'
+		'both_conules_present_and_strong'
+		,
+		24
+		'absent'
+		'present'
+		,
+		25
+		'absent'
+		'present'
+		,
+		26
+		'present'
+		'absent'
+		,
+		27
+		'absent'
+		'present'
+		,
+		28
+		'absent_'
+		'present'
+		,
+		29
+		'subequal_'
+		'medial_higher_than_lateral_ridge_'
+		'lateral_higher_than_medial_ridge'
+		,
+		30
+		'absent,_with_the_proximal_phalanx_short_relative_to_metacarpal_'
+		'present,_with_the_proximal_phalanx_long_relative_to_metacarpal'
+		,
+		31
+		'_large_'
+		'reduced'
+		,
+		32
+		'large_'
+		'small_'
+		'very_small_to_absent'
+		,
+		33
+		'long_and_narrow_'
+		'short_and_wide'
+		,
+		34
+		'long_and_projecting_ventrally_beyond_centrum'
+		'short_and_lateral_to_centrum,_not_projecting_ventrally_beyond_centrum'
+		,
+		35
+		'large_'
+		'very_small_to_absent'
+		,
+		36
+		'narrow'
+		'wide'
+		,
+		37
+		'narrow_'
+		'wide'
+		,
+		38
+		'caudal'
+		'cranial'
+		,
+		39
+		'blade-like_'
+		'rod-like'
+		,
+		40
+		'long_'
+		'short'
+		,
+		41
+		'small_'
+		'extensive'
+		,
+		42
+		'small,_medially_rather_than_proximally_extended_'
+		'large,_mediolaterally_restricted_and_proximally_extended'
+		,
+		43
+		'longer_than_intermediate_phalanges_'
+		'shorter_than_intermediate_phalanges'
+		,
+		44
+		'mediolaterally_narrow_'
+		'mediolaterally_broad'
+		'saddle-shaped'
+		,
+		45
+		'short_and_broad'
+		'tall_and_narrow'
+		,
+		46
+		'shallow_proximally_and_distally'
+		'deep_proximally_and_shallow_distally_'
+		'deep_proximally_and_distally'
+		'mediolaterally_wide_and_dorsoventrally_flattened'
+		,
+		47
+		'present_'
+		'very_reduced_to_absent'
+		,
+		48
+		'rounded_'
+		'flattened'
+		,
+		49
+		'less_than_120_'
+		'greater_than_120'
+		,
+		50
+		'unfused'
+		'postnatal_ossification_between_scaphoid_or_lunate_and_centrale_in_adults'
+		,
+		51
+		'between_70_and_150_'
+		'greater_than_150'
+		'_less_than_70'
+		,
+		52
+		'with_the_lateral_condyle_projecting_further_proximally_than_the_medial_condyle_'
+		'with_the_medial_and_lateral_condyles_projecting_to_a_similar_extent_proximally'
+		,
+		53
+		'robust_'
+		'small_to_absent_'
+		,
+		54
+		'long_'
+		'short'
+		,
+		55
+		'deep_'
+		'shallow_to_absent'
+		,
+		56
+		'deep_with_no_anterior_extension_of_patellar_ridges'
+		'very_deep_with_anterior_extension_of_patellar_ridges'
+		'shallow'
+		,
+		57
+		'distal_to_lesser_trochanter_'
+		'the_same_level_as_the_lesser_trochanter'
+		,
+		58
+		'triangular_and_narrow_mediolaterally_relative_to_its_distal_extent_'
+		'rectangular_and_wide_mediolaterally_relative_to_its_distal_extent'
+		,
+		59
+		'strong'
+		'reduced_to_absent'
+		,
+		60
+		'circular_with_the_ratio_of_craniocaudal_length_dorsoventral_breadth_less_than_1.1_'
+		'the_ratio_of_craniocaudal_length_dorsoventral_breadth_more_than_1.1'
+		,
+		61
+		'even_around_the_entire_rim_'
+		'markedly_more_emphasized_cranially'
+		,
+		62
+		'taller_than_femoral_head_'
+		'comparable_in_proximal_extent_to_femoral_head_'
+		'markedly_shorter_than_femoral_head'
+		,
+		63
+		'not_enlarged_and_not_extensive_medially'
+		'enlarged_and_extended_medially_beyond_the_level_of_the_head'
+		,
+		64
+		'flat_'
+		'a_concave_pit'
+		,
+		65
+		'_not_elongate_'
+		'_elongate'
+		,
+		66
+		'on_the_astragalus_on_the_midline'
+		'shifted_laterally_'
+		'absent'
+		,
+		67
+		'shallowly_grooved_'
+		'narrow_and_more_deeply_grooved_'
+		'not_grooved_at_all,_medial_and_lateral_guiding_ridges_absent'
+		,
+		68
+		'subequal_'
+		'lateral_border_much_higher_than_medial'
+		,
+		69
+		'less_than_30%_of_total_length_of_the_bone_'
+		'more_than_30%_of_total_length_of_the_bone'
+		,
+		70
+		'absent_'
+		'present_'
+		'similar_facet_on_the_sustentaculum_contacts_the_medial_malleolus_rather_than_the_astragalus'
+		'sustentaculum_reduced_or_absent'
+		,
+		71
+		'absent_'
+		'present_on_at_least_one_digit'
+		,
+		72
+		'_absent_'
+		'present_but_poorly_demarcated_'
+		'present_and_very_well_demarcated'
+		,
+		73
+		'mediolaterally_and_dorsopalmarly_extensive,_occuring_in_a_transverse_plane'
+		'limited_to_radial_and_palmar_aspects_of_distal_ulna,_lying_in_a_proximodistal_plane'
+		,
+		74
+		'similar_in_length_to_the_height_of_the_semilunar_notch,_with_the_ratio_of_olecranon_process_length_semilunar_notch_height_greater_than_0.8'
+		'very_reduced_with_the_ratio_of_olecranon_process_length_semilunar_notch_height_less_than_0.75'
+		,
+		75
+		'unfused_'
+		'fused'
+		,
+		76
+		'unfused'
+		'fused'
+		,
+		77
+		'short_'
+		'long'
+		,
+		78
+		'broad_but_limited_to_the_lateral_side_'
+		'narrow_and_more_extensive'
+		,
+		79
+		'absent_'
+		'present,_raised_and_canted'
+		,
+		80
+		'ovoid_with_the_ratio_of_mediolateral_breadth_anteroposterior_breadth_greater_than_1.26'
+		'round_with_the_ratio_of_mediolateral_breadth_anteroposterior_breadth_less_than_1.26'
+		,
+		81
+		'flat'
+		'deeply_excavated'
+		,
+		82
+		'clearly_distinct_from_the_rest_of_the_shaft'
+		'absent'
+		,
+		83
+		'only_a_medial_edge_present_'
+		'both_medial_and_lateral_edges_are_present_and_trochlea_and_capitulum_are_well_separated_by_a_distinct_gap'
+		,
+		84
+		'spindle_shaped'
+		'ball-like'
+		,
+		85
+		'not_distinct'
+		'present_as_a_distinct_protrusion_on_the_crest_leading_down_from_the_lesser_tuberosity'
+		,
+		86
+		'30%_or_more_of_total_distal_breadth_'
+		'less_than_30%_of_total_distal_breadth'
+		,
+		87
+		'broad_and_well_developed'
+		'reduced_to_absent_'
+		,
+		88
+		'distinct_'
+		'indistinct_to_absent_'
+		,
+		89
+		'positioned_anterior_'
+		'lateral'
+		,
+		90
+		'more_than_33%_total_length_of_the_bone_'
+		'less_than_33%_total_length_of_bone'
+		,
+		91
+		'gracile'
+		'protrudes_medially_away_from_humeral_shaft'
+		,
+		92
+		'not_shielded_'
+		'shielded_by_an_arterial_tube'
+		'shielded_by_a_bony_septum'
+		,
+		93
+		'directed_posterolaterally'
+		'directed_posteriorly'
+		,
+		94
+		'absent'
+		'present'
+		,
+		95
+		'absent'
+		'present'
+		,
+		96
+		'small_'
+		'prominent'
+		,
+		97
+		'present'
+		'obscured_by_maxillofrontal_contact'
+		,
+		98
+		'_absent'
+		'present'
+		,
+		99
+		'small'
+		'moderate'
+		'large'
+		,
+		100
+		'absent'
+		'present'
+		,
+		101
+		'on_orbital_rim'
+		'on_face'
+		'in_orbit'
+		,
+		102
+		'flare_laterally_at_the_caudal_extent_with_a_wide_contact_with_the_frontal_'
+		'do_not_flare_laterally_at_the_caudal_extent_with_a_narrow_contact_with_the_frontal'
+		,
+		103
+		'large'
+		'small'
+		,
+		104
+		'two_plates_present'
+		'one_plate_present'
+		,
+		105
+		'_absent_'
+		'present'
+		,
+		106
+		'single'
+		'dual'
+		,
+		107
+		'near_M3'
+		'well_rostral_to_M3'
+		'caudal_to_M3'
+		,
+		108
+		'present_and_large_'
+		'very_small_or_absent'
+		,
+		109
+		'broad_with_the_hypotympanic_sinus_restricted_'
+		'narrow_with_the_hypotympanic_sinus_expansive'
+		,
+		110
+		'long_snout,_long_neurocranium'
+		'reduced_snout,_more_bulbous_and_shorter_neurocranium'
+		,
+		111
+		'absent_'
+		'postorbital_process_of_the_frontal_is_present,_but_doesn_t_meet_zygomatic_'
+		'complete_postorbital_bar_present'
+		,
+		112
+		'no_strong_tubercle_or_inflation_in_the_mastoid_region_'
+		'strong_tubercle_or_inflation_in_the_mastoid_region'
+		,
+		113
+		'grooves_for_at_least_the_promontorial_branch,_no_tubes_'
+		'tubes_present_for_one_or_both_arteries_'
+		'ICA_absent'
+		,
+		114
+		'posteromedial_'
+		'posterolateral'
+		,
+		115
+		'not_expanded_into_a_tube_'
+		'expanded_into_a_bony_tube'
+		,
+		116
+		'subtympanic_recess_absent_and_the_ectotympanic_does_not_include_a_distinct_ring-like_element_'
+		'subtympanic_recess_present_and_the_ectotympanic_includes_a_ring-like_element_separated_by_an_annular_bridge,_membrane_or_gap_between_it_and_the_bulla'
+		,
+		117
+		'membranous,_or_bony_but_non-petrosal_in_origin_'
+		'no_suture_separating_bulla_from_petrosal_and_or_no_developmental_evidence_for_additional_elements_(1)'
+		,
+		118
+		'no_entotympanic_is_present'
+		'entotympanic_contacts_the_petrosal_medially_'
+		'entotympanic_contacts_the_basioccipital_medially_'
+		'no_medial_contact'
+		,
+		119
+		'absent_'
+		'one_or_more_present'
+		,
+		120
+		'angled_buccally'
+		'straight'
+		,
+		121
+		'_not_v-shaped_'
+		'v-shaped'
+		,
+		122
+		'projects_beyond_the_plane_of_the_mesiolingual_corner_of_the_tooth_'
+		'does_not_project_beyond_the_plane_of_the_mesiolingual_corner_of_the_tooth'
+		,
+		123
+		'absent_'
+		'present_and_connects_to_postcingulum_in_at_least_some_specimens_'
+		'present_and_does_not_connect_to_the_postcingulum_in_any_specimens'
+		,
+		124
+		'not_continuous'
+		'continuous_'
+		,
+		125
+		'absent_'
+		'present_as_a_true_hypocone,_coming_off_the_cingulum'
+		,
+		126
+		'central_on_the_tooth_'
+		'skewed_mesiobuccally'
+		,
+		127
+		'present'
+		'absent'
+		,
+		128
+		'paracone_metacone_'
+		'cusps_are_subequal'
+		'metacone_paracone'
+		,
+		129
+		'_0.9'
+		'_0.9_'
+		,
+		130
+		'm3_m2_'
+		'm3_m2_'
+		,
+		131
+		'broad'
+		'narrow_and_expressed_only_as_a_buccal_cingulum'
+		,
+		132
+		'absent_'
+		'weak_'
+		'pronounced'
+		,
+		133
+		'central_or_closer_to_protocone_than_to_paracone_or_metacone_'
+		'apressed_to_paracone_or_metacone'
+		,
+		134
+		'hypoconid_taller_than_entoconid_'
+		'entoconid_taller_than_hypoconid_'
+		,
+		135
+		'higher_than_metaconid'
+		'subequal_in_height_to_the_metaconid_'
+		'lower_than_metaconid_'
+		,
+		136
+		'absent'
+		'present'
+		,
+		137
+		'absent_'
+		'present'
+		,
+		138
+		'relatively_acute'
+		'blunter'
+		,
+		139
+		'much_narrower_than_trigonid'
+		'similar_in_breadth_to_trigonid_or_wider'
+		,
+		140
+		'similar_to_that_of_m1-2_'
+		'larger_than_that_of_m1-2_but_not_developed_into_a_lobe_'
+		'larger_than_that_of_m1-2_and_developed_into_a_lobe'
+		,
+		141
+		'present'
+		'absent'
+		,
+		142
+		'weakly_present_to_absent_'
+		'distinctly_present'
+		,
+		143
+		'_absent'
+		'present'
+		,
+		144
+		'not_swollen_at_the_base_'
+		'swollen_basally'
+		,
+		145
+		'narrower_than_trigonid_'
+		'wider_than_trigonid'
+		,
+		146
+		'smooth'
+		'crenulated'
+		,
+		147
+		'unpaired'
+		'paired'
+		'twinned'
+		,
+		148
+		'lower_than_metaconid_'
+		'subequal_to_or_taller_than_the_metaconid'
+		,
+		149
+		'distinct_from_paracristid_'
+		'indistinct_from_paracristid_'
+		,
+		150
+		'high-crowned_(index_0.79)'
+		'low-crowned_(index_.79)'
+		,
+		151
+		'anterobuccal_precingulid'
+		'cingulid_on_trigonid_and_talonid_'
+		'absent_with_no_buccal_cingulid_or_precingulid'
+		,
+		152
+		'trigonids_become_less_mesiodistally_compressed_from_m1-3_'
+		'mesiodistal_length_does_not_change_from_m1-3'
+		'trigonids_become_more_mesiodistally_compressed_from_m1-3'
+		,
+		153
+		'present'
+		'absent'
+		,
+		154
+		'_0.6_'
+		'_0.6'
+		,
+		155
+		'shorter_mesiodistally_than_wide_'
+		'equally_long_and_wide_'
+		,
+		156
+		'present'
+		'absent'
+		,
+		157
+		'large_and_projecting'
+		'small_and_not_projecting'
+		,
+		158
+		'_1.8_'
+		'_1.8'
+		,
+		159
+		'absent'
+		'present'
+		,
+		160
+		'0.90-0.98'
+		'_0.98'
+		'_0.9'
+		,
+		161
+		'tall_relative_to_talonid_'
+		'similar_height_to_talonid'
+		,
+		162
+		'absent'
+		'posterocone_present_but_no_apical_cuspules'
+		'posterocone_and_small_cuspules_developed_around_the_tip_with_no_strong_apical_division'
+		'strong_apical_division_into_an_anterocone_and_laterocone_in_addition_to_the_presence_of_a_posterocone'
+		,
+		163
+		'larger_than_adjacent_teeth'
+		'smaller_than_adjacent_teeth'
+		'absent'
+		,
+		164
+		'absent'
+		'present'
+		,
+		165
+		'not_markedly_enlarged_relative_to_other_incisors,_or_premolars_if_I2-3_are_missing'
+		'markedly_enlarged_relative_to_other_incisors,_or_premolars_if_I2-3_are_missing'
+		,
+		166
+		'procumbent-to-horizontal'
+		'essentially_vertical'
+		,
+		167
+		'simple_and_not_laterally_compressed'
+		'laterally_compressed_with_no_broad_flattened_dorsal_surface'
+		'laterally_compressed_with_a_broad_flattened_medial_or_dorsal_surface'
+		'multicuspate_and_comb-like_'
+		,
+		168
+		'present'
+		'absent'
+		,
+		169
+		'similar_to_other_incisors,_or_premolars_if_i2-3_are_not_present'
+		'larger_than_other_incisors,_or_premolars_if_i2-3_are_not_present'
+		,
+		170
+		'present'
+		'absent'
+		,
+		171
+		'present_and_small'
+		'absent'
+		'present_and_enlarged_and_or_larger_than_i1'
+		,
+		172
+		'present'
+		'absent'
+		,
+		173
+		'double-rooted'
+		'single-rooted'
+		'absent'
+		'triple-rooted'
+		,
+	;
+	
+	MATRIX
+	'Asioryctes'		              0000000000000000000000000000????0???00???????0?0?0???0?????????000000?0?0?00??0??????????????00??0000000000000000000000000000000000000000000000000000000000000000000000000000
+	'Purgatorius'		             11000?00001200{0,1}0{0,1}0000000111???????????????????????????????????????????????????????????????????????????????????????????0000200{0,1}00{0,1}10{0,1}000100011010{0,1}000{0,1}00{0,1}00000010020?10??100??
+	'Palaechthon'		             1100{0,2}111001200?{0,1}?00{0,1}00{0,2}0111??????????????????????????????????????????????????????????????????????10?00010?0?001???????000{0,1}2{0,1}010{0,1}{0,1}112101100121110100000{0,1}2{0,1}{0,1}1001120?0??0??10010
+	'Paromomyidae'		            11{0,1}02?10001200000001000001{0,1}01101?0{0,1}00?00000111110000010{0,2}01011111010101?2100001011001100110120010?10020010021100111110200012101101112111100121010110001121010011{1,2}13{0,1}??0{1,2}111010
+	'Chronolestes'		            111102111200000101000011010???????????????????????????????????????????????????????????????????????????????????????????01012000000112100110121111100100{0,1}2110111100110101011000
+	'Carpolestidae'		           0100111102002011021011111111010101100?1100020101100??1020111111000000112?00001?1??111001101200101101010100011001000?1?0101201000011211011012101110010002111111110301102010001
+	'Plesiadapidae'		           1{0,1}{0,1}011110301202020001010111010010?{0,1}00000000111010000010201{0,1}{0,1}{0,1}111010101?10000010110011000{0,1}0120011100111010001100120111?0?01{1,2}10000011211{0,1}1111210111001010210101112{0,1}311102111010
+	'Saxonellidae'		            10{0,1}00?120{0,3}0{0,2}2100{0,2}0001111111???????????????????????????????????????????????????????????????????????????????????????????01012{0,1}000001121{0,1}01001210111000{0,1}022100111110320101?11110
+	'Microsyopidae'		           11012011001{1,2}000110010000010????????????????????????00????????????????????????1?11?11?0001010000000??100100010011000?0?0101201100101110010001111010100101110000100110102111110
+	'Micromomyidae'		           11000010021{1,2}000022010000001?11010110?011000111011000010201011111010{0,1}01?2000001111001100010100010??????0?????1001001?1?000020010001101{0,1}010001111010101{0,1}{0,1}0001000000210101111110
+	'Altiatlasius'		            ????????0?????????0???????????????????????????????????????????????????????????????????????????????????????????????????0101{1,2}{0,1}0000??00100101??100110000102????????0????????????
+	'Altanius'		                ?0?0?1000012001101100000010???????????????????????????????????????????????????????????????????????????????????????????01012010011111010110121001100100121?010???0?0??1??01000
+	'Omomyidae'		               111021{0,1}1001{1,2}00{0,1}11000000001012??1??0???0?10?2?30???200001100111011010101??????1?11011100010110010?12?110100011120110110010120000011111001{0,1}00{1,2}100110000112100010120100111101011
+	'Adapidae'		                1000210000{0,1}1{0,1}{0,1}{0,1}10000000000012101?0000?0010020301002000011011110111101110000001011011100010110010112?10{0,1}100{0,1}111211101100101{1,2}1{0,1}100111100011{0,1}011001100001{0,1}2100011100000010101000
+	'Elpidophorus'		            1001???10{0,1}13{0,1}011{0,2}1100030111???????????????????????????????????????????????????????????????????????????????????????????10112011010100012100110100102010110?101100{0,1}??0?0301?0?3
+	'Plagiomene'		              00001?010113101121102030101??????????????????????????????????????????????????????????????????0????????010021?0?1101?1?1011210101110001200011010010200012001011001?00?03010003
+	'Cynocephalidae'		          1{0,1}10001{0,2}01131{0,1}1120010030111010121111111101111210110110120111120101200102111111101101{0,1}11001101000001020101111001120100200110000020000000000100100112000220?10110?1000003000212
+	'Ptilocercus'		             111{0,1}20111301{0,2}01120000000010010011111111100010101000010020101111100001201100100011011100000100100001001010101002010010101011111121000?10100000000002000111?100?1?0000100000210
+	'Tupaia'		                  111001110301{0,2}011200{0,1}0000010000000000000001000{0,1}10000000000000000000000200000100000000001000010100012101111101002010010210100011121000?10100000000102000211?00001?0000100000210
+	'Chiroptera'		              100000120001211000010000010000121111111101111{0,2}0011111112?11112000220030101111011110001110110100100201101102100{1,2}1000003001110010200000000000001001021101?101100000000010000010
+	'Berruvius'		               1?00????001{0,2}0001100???20??1???????????????????????????????????????????????????????????????????????????????????????????00012011001011110100011{0,1}101000{0,1}0011?0001000?10?01?1?0??
+	;
+ENDBLOCK;
+begin sets;
+taxset fossil = Asioryctes Purgatorius Palaechthon Paromomyidae Chronolestes Carpolestidae Plesiadapidae Saxonellidae Microsyopidae Micromomyidae Altiatlasius Altanius Omomyidae Adapidae Elpidophorus Plagiomene Berruvius ;
+taxset extant = Cynocephalidae Ptilocercus Tupaia Chiroptera ;
+end;
+Begin PAUP;
+ctype ord: 55 62 71 74;
+exclude uninf;
+end;

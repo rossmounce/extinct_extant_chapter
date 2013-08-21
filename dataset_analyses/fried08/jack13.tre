@@ -1,0 +1,9 @@
+(Polymixia,((((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),FHeteronec),(Caranx,Trachinotu)),(Chaetodipt,Platax)),Monodactyl),Scorpis),((Cyttus,Zeus),(Neocyttus,Xenolepidi)));
+(Polymixia,((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),(((Chaetodipt,Platax),Scorpis),FHeteronec)),(Caranx,Trachinotu)),Monodactyl),(((Cyttus,Zeus),Xenolepidi),Neocyttus));
+(Polymixia,(((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),(Caranx,Trachinotu)),FHeteronec),(Monodactyl,Scorpis)),(Chaetodipt,Platax)),(((Cyttus,Zeus),Neocyttus),Xenolepidi));
+(Polymixia,(((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),FHeteronec),((Chaetodipt,Platax),Scorpis)),(Caranx,Trachinotu)),Monodactyl),(((Cyttus,Zeus),Xenolepidi),Neocyttus));
+(Polymixia,((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),(FHeteronec,(Monodactyl,Scorpis))),(Caranx,Trachinotu)),(Chaetodipt,Platax)),((Cyttus,Zeus),(Neocyttus,Xenolepidi)));
+(Polymixia,((((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),(Caranx,Trachinotu)),FHeteronec),(Chaetodipt,Platax)),Monodactyl),Scorpis),(((Cyttus,Zeus),Neocyttus),Xenolepidi));
+(Polymixia,(((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),FHeteronec),(Caranx,Trachinotu)),(Monodactyl,Scorpis)),(Chaetodipt,Platax)),(((Cyttus,Zeus),Neocyttus),Xenolepidi));
+(Polymixia,((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),(Caranx,Trachinotu)),(FHeteronec,(Monodactyl,Scorpis))),(Chaetodipt,Platax)),(((Cyttus,Zeus),Neocyttus),Xenolepidi));
+(Polymixia,((((FAmphistiu,((((Citharus,FEobothus),Tephrinect),FNumidiopl),FJoleaudic)),FHeteronec),(Caranx,Trachinotu)),((Chaetodipt,Platax),(Monodactyl,Scorpis))),(((Cyttus,Zeus),Neocyttus),Xenolepidi));

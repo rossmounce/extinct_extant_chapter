@@ -1,0 +1,23 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PF"	"Diff MPTs"	"MPTs"	1	"RF"	"PD"	"Diff MPTs"
+2	"F"	"Aetiocetus_cotylalveus"	"2"	"6.32455532033676"	0	1	"fossil"	2.2666666667	5.8467468169	0.8
+4	"F"	"Balaenella_brachyrhynus"	"2"	"6.32455532033676"	0	1	"recent"	2.5238095238	7.19961365	0.7142857143
+6	"F"	"Balaenula_astensis"	"2"	"4.47213595499958"	1	2				
+8	"F"	"Cetotherium_rathkii"	"2"	"4.92442890089805"	1	2				
+9	"F"	"Diorocetus_hiatus"	"3"	"8.08670656106643"	1	2				
+10	"F"	"Eomysticetus_whitmorei"	"4"	"8.94427190999916"	0	1				
+13	"F"	"herp_bramblei"	"0"	"0"	0	1				
+14	"F"	"herp_transatlanticus"	"0"	"0"	0	1				
+15	"F"	"mega_miocaena"	"2"	"6.32455532033676"	0	1				
+17	"F"	"Metopocetus_durinasus"	"2"	"6.32455532033676"	0	1				
+18	"F"	"Morenocetus_parvus"	"5"	"10.8155015909729"	5	6				
+19	"F"	"Nannocetus_eremus"	"0"	"0"	0	1				
+20	"F"	"Pelocetus_calvertensis"	"2"	"6.35609553949898"	2	3				
+21	"F"	"Piscobalaena_nana"	"5"	"10.717133953398"	1	2				
+22	"F"	"Plesiobalaenoptera_quarantellii"	"3"	"8.08670656106643"	1	2				
+1	"R"	"Physeter_catodon"	"2"	"6.32455532033676"	0	1				
+3	"R"	"Balaena_mysticetus"	"3"	"7.63441361516796"	1	2				
+5	"R"	"Balaenoptera_bonaerensis"	"2.66666666666667"	"7.9077491858012"	2	3				
+7	"R"	"Caperea_marginata"	"4"	"8.94427190999916"	0	1				
+11	"R"	"Eschrichtius_robustus"	"2"	"6.32455532033676"	0	1				
+12	"R"	"Eubalaena_spp."	"2"	"6.32455532033676"	1	2				
+16	"R"	"mega_novaeangliae"	"2"	"6.93719487780375"	1	2				

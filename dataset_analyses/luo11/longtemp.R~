@@ -1,0 +1,4169 @@
+setwd("/home/ross/Dropbox/a_thesis/extinct_extant_chapter/asher03")
+library(phangorn)
+
+#STILL TO IMPLEMENT pre-allocate meantables, and loop through loops
+
+meantablerf <- {}
+meantablepd <- {}
+
+
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref2.tre")
+tr2 <- read.tree("jack1.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- mean(min[,2]) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- mean(min[,3]) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref3.tre")
+tr2 <- read.tree("jack2.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref4.tre")
+tr2 <- read.tree("jack3.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref5.tre")
+tr2 <- read.tree("jack4.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref6.tre")
+tr2 <- read.tree("jack5.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref7.tre")
+tr2 <- read.tree("jack6.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref8.tre")
+tr2 <- read.tree("jack7.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref9.tre")
+tr2 <- read.tree("jack8.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref10.tre")
+tr2 <- read.tree("jack9.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref11.tre")
+tr2 <- read.tree("jack10.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref12.tre")
+tr2 <- read.tree("jack11.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref13.tre")
+tr2 <- read.tree("jack12.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref14.tre")
+tr2 <- read.tree("jack13.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref15.tre")
+tr2 <- read.tree("jack14.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref16.tre")
+tr2 <- read.tree("jack15.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref17.tre")
+tr2 <- read.tree("jack16.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref18.tre")
+tr2 <- read.tree("jack17.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref19.tre")
+tr2 <- read.tree("jack18.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref20.tre")
+tr2 <- read.tree("jack19.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref21.tre")
+tr2 <- read.tree("jack20.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref22.tre")
+tr2 <- read.tree("jack21.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref23.tre")
+tr2 <- read.tree("jack22.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref24.tre")
+tr2 <- read.tree("jack23.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref25.tre")
+tr2 <- read.tree("jack24.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref26.tre")
+tr2 <- read.tree("jack25.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref27.tre")
+tr2 <- read.tree("jack26.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref28.tre")
+tr2 <- read.tree("jack27.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref29.tre")
+tr2 <- read.tree("jack28.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref30.tre")
+tr2 <- read.tree("jack29.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref31.tre")
+tr2 <- read.tree("jack30.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref32.tre")
+tr2 <- read.tree("jack31.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref33.tre")
+tr2 <- read.tree("jack32.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref34.tre")
+tr2 <- read.tree("jack33.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref35.tre")
+tr2 <- read.tree("jack34.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref36.tre")
+tr2 <- read.tree("jack35.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref37.tre")
+tr2 <- read.tree("jack36.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref38.tre")
+tr2 <- read.tree("jack37.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref39.tre")
+tr2 <- read.tree("jack38.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref40.tre")
+tr2 <- read.tree("jack39.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref41.tre")
+tr2 <- read.tree("jack40.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref42.tre")
+tr2 <- read.tree("jack41.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref43.tre")
+tr2 <- read.tree("jack42.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref44.tre")
+tr2 <- read.tree("jack43.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref45.tre")
+tr2 <- read.tree("jack44.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref46.tre")
+tr2 <- read.tree("jack45.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref47.tre")
+tr2 <- read.tree("jack46.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref48.tre")
+tr2 <- read.tree("jack47.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref49.tre")
+tr2 <- read.tree("jack48.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref50.tre")
+tr2 <- read.tree("jack49.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref51.tre")
+tr2 <- read.tree("jack50.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref52.tre")
+tr2 <- read.tree("jack51.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref53.tre")
+tr2 <- read.tree("jack52.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref54.tre")
+tr2 <- read.tree("jack53.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref55.tre")
+tr2 <- read.tree("jack54.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref56.tre")
+tr2 <- read.tree("jack55.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref57.tre")
+tr2 <- read.tree("jack56.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref58.tre")
+tr2 <- read.tree("jack57.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref59.tre")
+tr2 <- read.tree("jack58.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref60.tre")
+tr2 <- read.tree("jack59.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref61.tre")
+tr2 <- read.tree("jack60.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref62.tre")
+tr2 <- read.tree("jack61.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref63.tre")
+tr2 <- read.tree("jack62.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref64.tre")
+tr2 <- read.tree("jack63.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref65.tre")
+tr2 <- read.tree("jack64.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref66.tre")
+tr2 <- read.tree("jack65.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref67.tre")
+tr2 <- read.tree("jack66.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref68.tre")
+tr2 <- read.tree("jack67.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref69.tre")
+tr2 <- read.tree("jack68.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref70.tre")
+tr2 <- read.tree("jack69.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref71.tre")
+tr2 <- read.tree("jack70.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref72.tre")
+tr2 <- read.tree("jack71.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref73.tre")
+tr2 <- read.tree("jack72.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref74.tre")
+tr2 <- read.tree("jack73.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref75.tre")
+tr2 <- read.tree("jack74.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref76.tre")
+tr2 <- read.tree("jack75.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref77.tre")
+tr2 <- read.tree("jack76.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref78.tre")
+tr2 <- read.tree("jack77.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref79.tre")
+tr2 <- read.tree("jack78.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref80.tre")
+tr2 <- read.tree("jack79.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref81.tre")
+tr2 <- read.tree("jack80.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref82.tre")
+tr2 <- read.tree("jack81.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref83.tre")
+tr2 <- read.tree("jack82.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref84.tre")
+tr2 <- read.tree("jack83.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref85.tre")
+tr2 <- read.tree("jack84.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref86.tre")
+tr2 <- read.tree("jack85.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref87.tre")
+tr2 <- read.tree("jack86.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref88.tre")
+tr2 <- read.tree("jack87.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref89.tre")
+tr2 <- read.tree("jack88.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref90.tre")
+tr2 <- read.tree("jack89.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref91.tre")
+tr2 <- read.tree("jack90.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref92.tre")
+tr2 <- read.tree("jack91.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref93.tre")
+tr2 <- read.tree("jack92.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref94.tre")
+tr2 <- read.tree("jack93.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref95.tre")
+tr2 <- read.tree("jack94.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref96.tre")
+tr2 <- read.tree("jack95.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref97.tre")
+tr2 <- read.tree("jack96.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref98.tre")
+tr2 <- read.tree("jack97.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref99.tre")
+tr2 <- read.tree("jack98.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+rm(min)
+rm(x)
+rm(ref2)
+rm(tr2)
+#jack REFERENCE trees 264 PAUP numbering hence 2
+ref2 <- read.tree("ref100.tre")
+tr2 <- read.tree("jack99.tre")
+
+#all reference trees to one comp tree
+x <- matrix(ncol = 4, nrow = prod(length(tr2), length(ref2)))
+ii <- 1 # loop counter
+for (i in seq_along(tr2)) {
+  for (j in seq_along(ref2)) {
+if(class(tr2)=="phylo" & class(ref2)=="phylo") {
+  x[ii, ]<- c(i,j,treedist(tr2,ref2))
+  ii <- ii+1
+} 
+else if(class(tr2)=="phylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2,ref2[[j]]))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="phylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2))
+  ii <- ii+1
+}
+else if(class(tr2)=="multiPhylo" & class(ref2)=="multiPhylo") {
+  x[ii, ] <- c(i, j, treedist(tr2[[i]],ref2[[j]]))
+  ii <- ii+1
+    }
+  else
+  stop("Not OK check your values")
+}
+}
+#colnames(x) <- c("j","ref","rf","pd")
+min <- matrix(ncol = 3, nrow = length(tr2))
+kk <- 1 ## loop counter
+for (i in seq_along(tr2)) {
+    min[kk, ] <- c(i, min((subset(x, x[,1] == i , drop=FALSE))[,3]), min((subset(x, x[,1] == i , drop=FALSE))[,4]))
+    kk <- kk+1
+  }
+meantablerf <- rbind(meantablerf,mean(min[,2])) #zmean RF closest trees between pruned and deleted sets
+meantablepd <- rbind(meantablepd,mean(min[,3])) #zmean PD closest trees between pruned and deleted sets
+
+blah <- read.tree("nopruneref.tre")
+blah$tip[-1]
+
+write.csv(cbind(c(blah$tip.label[-1],NA),meantablerf,meantablepd),file="resultsR.csv")
+

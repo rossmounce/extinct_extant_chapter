@@ -1,0 +1,3 @@
+(Boreosomus,FBirgeria,((FPeipiaost,(Polyodon,FProtopsep)),(FPsammorhy,(((((((Hhuso,Aruthenus),Abaeri),((Pkauffmani,Phermanni),Astellatus)),Atransmont),Aoxyrinchu),(Abrevirost,Afulvescen)),Scaphirhyn))));
+(Boreosomus,FBirgeria,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,((((((Hhuso,Aruthenus),Abaeri),((Pkauffmani,Phermanni),Astellatus)),(Aoxyrinchu,Atransmont)),(Abrevirost,Afulvescen)),Scaphirhyn)))));
+(Boreosomus,FBirgeria,(FPeipiaost,((Polyodon,FProtopsep),(((((FPsammorhy,Scaphirhyn),(Abrevirost,Afulvescen)),(Aoxyrinchu,Atransmont)),((Hhuso,Aruthenus),Abaeri)),((Pkauffmani,Phermanni),Astellatus)))));

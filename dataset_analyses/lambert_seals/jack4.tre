@@ -1,0 +1,6 @@
+(Kentriodon,Delphinodo,((((Salumiphoc,Australith),(Piscolitha,(Haborophoc,Septemtrio))),(Piscolitha,((Phocoena_s,Phocoena_s),((Phocoena_d,(Phocoena_p,Phocoenoid)),Neophocaen)))),Lomacetus));
+(Kentriodon,Delphinodo,((((Salumiphoc,Australith),(Piscolitha,(Haborophoc,Septemtrio))),(Piscolitha,((Phocoena_s,Phocoena_s),(((Phocoena_d,Phocoena_p),Phocoenoid),Neophocaen)))),Lomacetus));
+(Kentriodon,Delphinodo,(((((Salumiphoc,Australith),((Phocoena_s,Phocoena_s),((Phocoena_d,(Phocoena_p,Phocoenoid)),Neophocaen))),(Piscolitha,(Haborophoc,Septemtrio))),Piscolitha),Lomacetus));
+(Kentriodon,Delphinodo,((((Salumiphoc,Australith),((Piscolitha,(Haborophoc,Septemtrio)),((Phocoena_s,Phocoena_s),((Phocoena_d,(Phocoena_p,Phocoenoid)),Neophocaen)))),Piscolitha),Lomacetus));
+(Kentriodon,Delphinodo,(((((Salumiphoc,Australith),((Phocoena_s,Phocoena_s),(((Phocoena_d,Phocoena_p),Phocoenoid),Neophocaen))),(Piscolitha,(Haborophoc,Septemtrio))),Piscolitha),Lomacetus));
+(Kentriodon,Delphinodo,((((Salumiphoc,Australith),((Piscolitha,(Haborophoc,Septemtrio)),((Phocoena_s,Phocoena_s),(((Phocoena_d,Phocoena_p),Phocoenoid),Neophocaen)))),Piscolitha),Lomacetus));

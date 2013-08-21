@@ -1,0 +1,6 @@
+(Tinamidae,Galliforme,(((Trogonidae,Podargidae),(Steatornit,((Protocypse,(((Aegothelid,Eocypselid),Aegialorni),((Argornis,(Jungornis,Trochilida)),(Hemiprocni,(Scaniacyps,Apodinae))))),(Nyctibiida,Caprimulgi)))),Coraciidae));
+(Tinamidae,Galliforme,(((Trogonidae,Podargidae),(Steatornit,(Protocypse,((Nyctibiida,Caprimulgi),((Aegothelid,(Eocypselid,Aegialorni)),((Argornis,(Jungornis,Trochilida)),(Hemiprocni,(Scaniacyps,Apodinae)))))))),Coraciidae));
+(Tinamidae,Galliforme,(((Trogonidae,Podargidae),(Steatornit,(((Protocypse,((Argornis,(Jungornis,Trochilida)),(Hemiprocni,(Scaniacyps,Apodinae)))),((Aegothelid,Eocypselid),Aegialorni)),(Nyctibiida,Caprimulgi)))),Coraciidae));
+(Tinamidae,Galliforme,(((Trogonidae,Podargidae),(Steatornit,((Protocypse,((Aegothelid,(Eocypselid,Aegialorni)),((Argornis,(Jungornis,Trochilida)),(Hemiprocni,(Scaniacyps,Apodinae))))),(Nyctibiida,Caprimulgi)))),Coraciidae));
+(Tinamidae,Galliforme,(((Trogonidae,Podargidae),(Steatornit,(Protocypse,((Nyctibiida,Caprimulgi),(((Aegothelid,Eocypselid),Aegialorni),((Argornis,(Jungornis,Trochilida)),(Hemiprocni,(Scaniacyps,Apodinae)))))))),Coraciidae));
+(Tinamidae,Galliforme,(((Trogonidae,Podargidae),(Steatornit,(((Protocypse,((Argornis,(Jungornis,Trochilida)),(Hemiprocni,(Scaniacyps,Apodinae)))),(Aegothelid,(Eocypselid,Aegialorni))),(Nyctibiida,Caprimulgi)))),Coraciidae));

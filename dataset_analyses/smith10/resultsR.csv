@@ -1,0 +1,59 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PD"	"Diff MPTs"	"MPTs"	6	"RF"	"PD"	"Diff MPTs"
+11	"F "	"Lithoptila_abdounensis"	0.3333333333	1.7638342074	0	6	"fossil"	4.5654761905	20.6448072232	0.375
+12	"F "	"Prophaethon_shrubsolei"	0.3333333333	1.7638342074	0	6	"recent"	1.8353968254	9.6142871505	1.08
+25	"F "	"Limnofregata"	4.1904761905	33.7971256931	15	21				
+38	"F "	"Phocavis_maritimus"	0	0	-4	2				
+39	"F "	"Plotopterum_joaquinensis"	2	10.5830052443	-4	2				
+40	"F "	"Copepteryx_hexeris"	25	85.1572763043	0	6				
+41	"F "	"Tonsala_hildegardae"	4	28.5657137142	-4	2				
+44	"F "	"Borvocarbo_stoeffelensis"	0.6666666667	3.5276684148	0	6				
+1	"R"	"Gallus_gallus"	1.3333333333	7.0553368295	-3	3				
+2	"R"	"Gavia_immer"	0.6666666667	3.5276684148	0	6				
+3	"R"	"Podiceps_auritus"	0.6666666667	3.5276684148	0	6				
+4	"R"	"Pygoscelis_antarctica"	1	5.2915026221	0	6				
+5	"R"	"Eudyptula_minor"	0.6666666667	3.5276684148	0	6				
+6	"R"	"Phoebastria_nigripes"	6	31.384709653	-3	3				
+7	"R"	"Puffinus_gravis"	0.6666666667	3.5276684148	0	6				
+8	"R"	"Pelecanoides_urinatrix"	1	5.2915026221	0	6				
+9	"R"	"Oceanodroma_castro"	1	5.2915026221	0	6				
+10	"R"	"Oceanites_oceanicus"	1	5.2915026221	0	6				
+13	"R"	"Phaethon_rubricauda"	0.6666666667	3.5276684148	0	6				
+14	"R"	"Phaethon_lepturus"	0.6666666667	3.5276684148	0	6				
+15	"R"	"Phaethon_aethereus"	0.6666666667	3.5276684148	0	6				
+16	"R"	"Phoenicopterus_chilensis"	0.6666666667	3.5276684148	-3	3				
+17	"R"	"Ciconia_abdimii"	2.8888888889	21.4746637763	3	9				
+18	"R"	"Cochlearius_cochlearius"	0.6666666667	3.5276684148	-3	3				
+19	"R"	"Ardea_herodias"	0.6666666667	3.5276684148	-3	3				
+20	"R"	"Eudocimus_albus"	1.3333333333	7.0553368295	-3	3				
+21	"R"	"Platalea_ajaja"	0.6666666667	3.5276684148	-3	3				
+22	"R"	"Scopus_umbretta"	5.6666666667	49.8321722561	0	6				
+23	"R"	"Balaeniceps_rex"	17.3333333333	76.2857383565	0	6				
+24	"R"	"Pelecanus_erythrorhnychos"	4.6666666667	29.6910613372	0	6				
+26	"R"	"Fregata_minor"	0.6666666667	3.5276684148	0	6				
+27	"R"	"Fregata_ariel"	0.6666666667	3.5276684148	0	6				
+28	"R"	"Fregata_magnificens"	0.6666666667	3.5276684148	0	6				
+29	"R"	"Papasula_abbotti"	0.6666666667	3.5276684148	0	6				
+30	"R"	"Sula_sula"	0.6666666667	3.5276684148	0	6				
+31	"R"	"Sula_leucogaster"	0.6666666667	3.5276684148	0	6				
+32	"R"	"Sula_dactylatra"	0.6666666667	3.5276684148	0	6				
+33	"R"	"Sula_variegata"	0.6666666667	3.5276684148	0	6				
+34	"R"	"Sula_nebouxii"	0.6666666667	3.5276684148	0	6				
+35	"R"	"Morus_serrator"	0.6666666667	3.5276684148	0	6				
+36	"R"	"Morus_bassanus"	0.6666666667	3.5276684148	0	6				
+37	"R"	"Morus_capensis"	0.6666666667	3.5276684148	0	6				
+42	"R"	"Anhinga_anhinga_anhinga"	0	0	0	6				
+43	"R"	"Anhinga_anhinga_rufa"	0.6666666667	3.5276684148	0	6				
+45	"R"	"Phalacrocorax_africanus"	0.6666666667	3.5276684148	0	6				
+46	"R"	"Phalacrocorax_pygmaeus"	0.6666666667	3.5276684148	0	6				
+47	"R"	"Phalacrocorax_melanoleucos"	0.6666666667	3.5276684148	0	6				
+48	"R"	"Phalacrocorax_auritus"	1	5.2915026221	0	6				
+49	"R"	"Phalacrocorax_brasilianus"	1	5.2915026221	0	6				
+50	"R"	"Phalacrocorax_gaimardi"	1.5	11.4412197046	6	12				
+51	"R"	"Phalacrocorax_carbo"	5.6666666667	23.9714424027	6	12				
+52	"R"	"Phalacrocorax_penicillatus"	9.7142857143	41.5619057676	36	42				
+53	"R"	"Phalacrocorax_pelagicus"	8.6666666667	38.0901998153	24	30				
+54	"R"	"Phalacrocorax_aristotelis"	0	0	0	6				
+55	"R"	"Phalacrocorax_bougainvilli"	0.6666666667	3.5276684148	0	6				
+56	"R"	"Phalacrocorax_magellanicus"	0.6666666667	3.5276684148	0	6				
+57	"R"	"Phalacrocorax_atriceps"	0.6666666667	3.5276684148	0	6				
+58	"R"	"Phalacrocorax_albiventer"	1	5.2915026221	0	6				

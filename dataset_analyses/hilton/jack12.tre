@@ -1,0 +1,9 @@
+(Boreosomus,FBirgeria,(FChondrost,((FPeipiaost,(FPsammorhy,((((((Hhuso,Aruthenus),Abaeri),(Aoxyrinchu,Atransmont)),(Abrevirost,Afulvescen)),Scaphirhyn),(Pkauffmani,Phermanni)))),(Polyodon,FProtopsep))));
+(Boreosomus,FBirgeria,(FChondrost,((FPeipiaost,(FPsammorhy,(((((Hhuso,(Aruthenus,Abaeri)),(Abrevirost,Afulvescen)),(Aoxyrinchu,Atransmont)),Scaphirhyn),(Pkauffmani,Phermanni)))),(Polyodon,FProtopsep))));
+(Boreosomus,FBirgeria,(FChondrost,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,(((Hhuso,(Aruthenus,Abaeri)),((Abrevirost,Afulvescen),(Aoxyrinchu,Atransmont))),(Scaphirhyn,(Pkauffmani,Phermanni))))))));
+(Boreosomus,FBirgeria,(FChondrost,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,((((Hhuso,(Aruthenus,Abaeri)),((Abrevirost,Afulvescen),(Aoxyrinchu,Atransmont))),Scaphirhyn),(Pkauffmani,Phermanni)))))));
+(Boreosomus,FBirgeria,(FChondrost,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,((((((Hhuso,Aruthenus),Abaeri),Atransmont),Aoxyrinchu),(Abrevirost,Afulvescen)),(Scaphirhyn,(Pkauffmani,Phermanni))))))));
+(Boreosomus,FBirgeria,(FChondrost,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,(((((Hhuso,Aruthenus),Abaeri),(Aoxyrinchu,Atransmont)),(Abrevirost,Afulvescen)),(Scaphirhyn,(Pkauffmani,Phermanni))))))));
+(Boreosomus,FBirgeria,(FChondrost,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,((((((Hhuso,Aruthenus),Abaeri),(Aoxyrinchu,Atransmont)),(Abrevirost,Afulvescen)),Scaphirhyn),(Pkauffmani,Phermanni)))))));
+(Boreosomus,FBirgeria,(FChondrost,((FPeipiaost,(FPsammorhy,(((((((Hhuso,Aruthenus),Abaeri),Aoxyrinchu),Atransmont),(Abrevirost,Afulvescen)),Scaphirhyn),(Pkauffmani,Phermanni)))),(Polyodon,FProtopsep))));
+(Boreosomus,FBirgeria,(FChondrost,(FPeipiaost,((Polyodon,FProtopsep),(FPsammorhy,(((((((Hhuso,Aruthenus),Abaeri),Aoxyrinchu),Atransmont),(Abrevirost,Afulvescen)),Scaphirhyn),(Pkauffmani,Phermanni)))))));

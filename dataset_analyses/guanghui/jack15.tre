@@ -1,0 +1,3 @@
+(FLeptolepi,(Elops,Odaxothris),((Hiodon,((FParalycop,(FSingida,(FPhareodus,(((Arapaima,Heterotis),((Scleropage,Scleropage),Osteogloss)),Pantodon)))),Gnathonemu)),FLycoptera));
+(FLeptolepi,(Elops,Odaxothris),((Hiodon,(FParalycop,(FSingida,(FPhareodus,((((Arapaima,Heterotis),Gnathonemu),(Scleropage,(Scleropage,Osteogloss))),Pantodon))))),FLycoptera));
+(FLeptolepi,Elops,(Odaxothris,(Hiodon,(FLycoptera,(FParalycop,(FSingida,(FPhareodus,((((Arapaima,Heterotis),Gnathonemu),(Scleropage,(Scleropage,Osteogloss))),Pantodon))))))));

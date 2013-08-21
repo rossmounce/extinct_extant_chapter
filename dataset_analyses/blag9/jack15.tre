@@ -1,0 +1,4 @@
+(Diadocidia,((FPal_sciar,FPal_afini),((RAsio_asia,RAsiorrhin),(((Labellorrh,(Blagorrhin,Gracillorh)),(Loyugesa_k,Matileola_)),(Lygistorrh,Lygistorrh)))),((FArchaeogn,(FLebanogno,(FPlesiogno,FProtognor))),FLeptognor));
+(Diadocidia,((FPal_sciar,FPal_afini),((RAsio_asia,RAsiorrhin),((Labellorrh,((Loyugesa_k,Matileola_),(Blagorrhin,Gracillorh))),(Lygistorrh,Lygistorrh)))),((FArchaeogn,(FLebanogno,(FPlesiogno,FProtognor))),FLeptognor));
+(Diadocidia,(((FPal_sciar,FPal_afini),((Labellorrh,((Loyugesa_k,Matileola_),(Blagorrhin,Gracillorh))),(Lygistorrh,Lygistorrh))),(RAsio_asia,RAsiorrhin)),((FArchaeogn,(FLebanogno,(FPlesiogno,FProtognor))),FLeptognor));
+(Diadocidia,((FPal_sciar,FPal_afini),((RAsio_asia,RAsiorrhin),((((Labellorrh,Blagorrhin),Gracillorh),(Loyugesa_k,Matileola_)),(Lygistorrh,Lygistorrh)))),((FArchaeogn,(FLebanogno,(FPlesiogno,FProtognor))),FLeptognor));
