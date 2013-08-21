@@ -9,7 +9,7 @@ It is an update of the method used in:
 1. This pipeline probably only works on Unix operating systems (Linux/Mac), I used Ubuntu 13.04
 2. The cladistic data must be validly formatted for use with TNT
 3. You must be able to call *TNT* from any terminal with 'tnt'
-4. You must be able to call *PAUP\** from any terminal with 'paup'
+4. You must be able to call *PAUP** from any terminal with 'paup'
 5. You must have *R* installed along with the package 'phangorn' and it's dependancies
 6. All taxon-names must be unique in the first 10 characters e.g. *Crocodylus\_acutus* and *Crocodylus\_johnsoni* MUST be renamed as their first 10 characters are identical. (This pipeline makes use of PAUP\*'s PHYLIP tree-format export function which automatically truncates names to the first 10 characters)
 
