@@ -1,4 +1,4 @@
-setwd("/home/ross/Dropbox/a_thesis/extinct_extant_chapter/luo11")
+setwd("")
 library(phangorn)
 
 #STILL TO IMPLEMENT pre-allocate meantables, and loop through loops
