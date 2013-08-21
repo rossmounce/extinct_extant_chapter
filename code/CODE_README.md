@@ -23,7 +23,7 @@ Assuming the dataset you want to test is in a file called *data.tnt*
 
 1. execute *TNT* interactively
 2. load in your dataset with *proc data.tnt*
-3. do the parsimony analyses required with *proc tntdb.txt* (this executes the instructions with the tntdb.txt file, which does all the required parsimony analyses) N.B. by default, equally-weighted analyses are used. If you want to do implied-weighting analyses you may need to change one or two settings. 
+3. do the parsimony analyses required with *proc tntdb.txt* (this executes the instructions in the *tntdb.txt* file, which does all the required parsimony analyses) N.B. by default, equally-weighted analyses are used. If you want to do implied-weighting analyses you may need to change one or two settings. 
 4. quit *TNT* once all the searches are done
 
 **Preparing treefiles for analysis within _R_ using PAUP**
