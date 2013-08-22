@@ -1,0 +1,211 @@
+number of triplets 16215
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+current triplet: 7800
+current triplet: 7900
+current triplet: 8000
+current triplet: 8100
+current triplet: 8200
+current triplet: 8300
+current triplet: 8400
+current triplet: 8500
+current triplet: 8600
+current triplet: 8700
+current triplet: 8800
+current triplet: 8900
+current triplet: 9000
+current triplet: 9100
+current triplet: 9200
+current triplet: 9300
+current triplet: 9400
+current triplet: 9500
+current triplet: 9600
+current triplet: 9700
+current triplet: 9800
+current triplet: 9900
+current triplet: 10000
+current triplet: 10100
+current triplet: 10200
+current triplet: 10300
+current triplet: 10400
+current triplet: 10500
+current triplet: 10600
+current triplet: 10700
+current triplet: 10800
+current triplet: 10900
+current triplet: 11000
+current triplet: 11100
+current triplet: 11200
+current triplet: 11300
+current triplet: 11400
+current triplet: 11500
+current triplet: 11600
+current triplet: 11700
+current triplet: 11800
+current triplet: 11900
+current triplet: 12000
+current triplet: 12100
+current triplet: 12200
+current triplet: 12300
+current triplet: 12400
+current triplet: 12500
+current triplet: 12600
+current triplet: 12700
+current triplet: 12800
+current triplet: 12900
+current triplet: 13000
+current triplet: 13100
+current triplet: 13200
+current triplet: 13300
+current triplet: 13400
+current triplet: 13500
+current triplet: 13600
+current triplet: 13700
+current triplet: 13800
+current triplet: 13900
+current triplet: 14000
+current triplet: 14100
+current triplet: 14200
+current triplet: 14300
+current triplet: 14400
+current triplet: 14500
+current triplet: 14600
+current triplet: 14700
+current triplet: 14800
+current triplet: 14900
+current triplet: 15000
+current triplet: 15100
+current triplet: 15200
+current triplet: 15300
+current triplet: 15400
+current triplet: 15500
+current triplet: 15600
+current triplet: 15700
+current triplet: 15800
+current triplet: 15900
+current triplet: 16000
+current triplet: 16100
+current triplet: 16200
+Sylvacoleu	0.9565217391304348
+Tetraphale	0.9565217391304348
+Catops	0.9990338164251208
+Meru	0.9477053140096618
+Noterus	0.9518115942028985
+Synchortus	0.9518115942028985
+Canthydrus	0.9518115942028985
+Notomicrus	0.9506038647342995
+Phreatodyt	0.9495169082125604
+Exedia	0.9523349436392914
+Daohugoune	0.9523349436392914
+Hispanocla	0.9523349436392914
+Stygeonect	0.9512882447665055
+Coptoclava	0.9512882447665055
+Charonosca	0.9497181964573268
+Aspidytes	0.9685990338164251
+Amphizoa	0.9685990338164251
+Hygrobia	0.9685990338164251
+Parahygrob	0.9685990338164251
+Copelatus	0.9685990338164251
+Agabus	0.9685990338164251
+Dytiscus	0.9685990338164251
+Liadytiscu	0.9685990338164251
+Liadytes	0.9685990338164251
+_Bolbonect	0.9990338164251208
+Peltodytes	0.9990338164251208
+Brychius	0.9990338164251208
+Apteralipl	0.9990338164251208
+HaliplusLi	0.9990338164251208
+HaliplusNe	0.9990338164251208
+Trachypach	0.9983091787439613
+Systolosom	0.9983091787439613
+Carabus	0.9983091787439613
+Bembidion	0.9973429951690821
+Pterostich	0.9973429951690821
+Fortiseode	0.9973429951690821
+Necronecte	0.9983091787439613
+Karadromeu	0.9939613526570048
+Eodromeus	0.9939613526570048
+Triaplus	0.9990338164251208
+Spanglerog	0.9942028985507246
+Gyrinus	0.9980676328502416
+Dineutus	0.9980676328502416
+Orectochil	0.9980676328502416
+Gyretes	0.9980676328502416
+Mesodineut	0.9980676328502416
+Triadogyru	0.9942028985507246
