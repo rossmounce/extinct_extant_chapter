@@ -1,0 +1,58 @@
+number of triplets 2925
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+FOSSIL_Dip	0.9230769230769231
+Brycon	0.9969230769230769
+FOSSIL_Aet	0.8820512820512812
+Chanos	0.883760683760683
+FOSSIL_Tha	0.883760683760683
+FOSSIL_Das	0.8820512820512812
+FOSSIL_Par	0.8786324786324778
+FOSSIL_Gor	0.8871794871794865
+FOSSIL_Rub	0.8871794871794865
+FOSSIL_Apu	0.8811965811965804
+FOSSIL_Lec	0.7776068376068362
+FOSSIL_Cha	0.886495726495726
+FOSSIL_Jud	0.8841025641025635
+FOSSIL_Cha	0.886495726495726
+FOSSIL_Ram	0.8841025641025635
+FOSSIL_Hak	0.8888888888888883
+Gonorynchu	0.8827350427350421
+FOSSIL_Not	0.8827350427350421
+Cromeria	0.8538461538461534
+Grasseicht	0.8538461538461534
+Kneria	0.8538461538461534
+Parakneria	0.8538461538461534
+FOSSIL_Hal	0.7641025641025648
+Phractolae	0.8507692307692304
+FOSSIL_Sor	0.9969230769230769
+Opsariicht	0.9969230769230769
+FOSSIL_New	0.9230769230769231

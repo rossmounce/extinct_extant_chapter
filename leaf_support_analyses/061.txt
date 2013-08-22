@@ -1,0 +1,102 @@
+number of triplets 6545
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+Hypsiprymn	0.8859180035650623
+Bettongiap	0.9429590017825312
+Potoroustr	0.9429590017825312
+Ngamarooar	0.9964349376114082
+Lagostroph	0.9964349376114082
+Troposodon	0.9964349376114082
+Ganguroobi	0.9964349376114082
+Wanburoohi	0.9964349376114082
+Hadronomas	0.9964349376114082
+Sthenurusa	0.9964349376114082
+Simosthenu	0.9964349376114082
+Procoptodo	0.9964349376114082
+Dorcopsoid	0.9964349376114082
+Dorcopsisv	0.9964349376114082
+Dorcopsulu	0.9964349376114082
+Setonixbra	0.9964349376114082
+Thylogaleb	0.9964349376114082
+Protemnodo	0.9964349376114082
+Congruusco	0.9964349376114082
+Wallabiabi	0.9964349376114082
+Prionotemn	0.9964349376114082
+Kurrabimah	0.9964349376114082
+Baringanel	0.9964349376114082
+Onychogale	0.9964349376114082
+Mcropuseug	0.9964349376114082
+Macropusfu	0.9964349376114082
+Maropuspav	0.9964349376114082
+Macopusrob	0.9964349376114082
+Lagrcheste	0.9964349376114082
+Laorcheste	0.9964349376114082
+Petrogaleb	0.9964349376114082
+Bohraillum	0.9964349376114082
+Degusbenne	0.9964349376114082
+Degusmatsc	0.9964349376114082
+Nowidgeema	0.9964349376114082

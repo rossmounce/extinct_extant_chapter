@@ -1,0 +1,25 @@
+number of triplets 680
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+hypothetic	0.875
+Praeichneu	0.875
+Eoichneumo	0.9458333333333332
+Aenigmabra	0.8583333333333332
+Protorhyss	0.8555555555555554
+Prorhyssal	0.8555555555555554
+Rhyssalina	0.8930555555555554
+Aphidiinae	0.8868055555555554
+Other_cycl	0.8930555555555554
+Apozyginae	0.8805555555555553
+Noncyclost	0.8999999999999999
+Trachypeti	0.8999999999999999
+Hybrizonti	0.8222222222222219
+Tanychorel	0.7482638888888888
+Other_Ichn	0.7840277777777778
+Xoridinae	0.7916666666666663
+Tanychora	0.8527777777777769

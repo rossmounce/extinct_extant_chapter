@@ -1,0 +1,62 @@
+number of triplets 3276
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+Squalodon	0.9259259259259259
+Waipatia	0.9971509971509972
+Eurhinodel	0.8703703703703703
+Schizodelp	0.9017094017094017
+Ziphiodelp	0.9017094017094017
+Xhosacetus	0.99002849002849
+Pterocetus	0.99002849002849
+Indopacetu	0.99002849002849
+Africanace	0.99002849002849
+Ihlengesi	0.99002849002849
+Hyperoodon	0.99002849002849
+Mesoplodon	0.99002849002849
+Microberar	0.99002849002849
+Berardius	0.99002849002849
+Archaeozip	0.99002849002849
+Tasmacetus	0.99002849002849
+Nazcacetus	0.99002849002849
+Ziphius	0.99002849002849
+Izikoziphi	0.99002849002849
+Choneziphi	0.99002849002849
+Tusciziphi	0.99002849002849
+Globicetus	0.99002849002849
+Imocetus	0.99002849002849
+Beneziphiu	0.9886039886039886
+Ziphirostr	0.9886039886039886
+Messapicet	0.9886039886039886
+Ninoziphiu	0.99002849002849
+Squaloziph	0.9259259259259259

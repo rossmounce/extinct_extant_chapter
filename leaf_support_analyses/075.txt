@@ -1,0 +1,77 @@
+number of triplets 4495
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+Leptolepis	0.9333333333333333
+Arapaima	0.9977011494252873
+Heterotis	0.9977011494252873
+Sinoglossu	0.9977011494252873
+Brychaetus	0.9977011494252873
+phr_erwaus	0.9977011494252873
+phr_queens	0.9977011494252873
+phr_testis	0.9977011494252873
+Singida	0.9977011494252873
+Osteogloss	0.9977011494252873
+spag_forrn	0.9977011494252873
+spag_leieh	0.9977011494252873
+Pantodon	0.9977011494252873
+Paralycopt	0.9977011494252873
+Huashia	0.9977011494252873
+Kuntulunia	0.9977011494252873
+Xixiaichth	0.9977011494252873
+Mormyridae	0.9931034482758619
+Notopterus	0.9946360153256704
+Papyrocran	0.9946360153256704
+Xenomystus	0.9946360153256704
+Ostariosto	0.9931034482758619
+Thaumaturu	0.9977011494252873
+Eohiodon	0.9977011494252873
+Hiodon	0.9977011494252873
+Jiaohichth	0.9977011494252873
+Tongxinich	0.9977011494252873
+Kuyangicht	0.9977011494252873
+Jinaniehth	0.9977011494252873
+Lycoptera	0.9977011494252873
+Jiuquanich	0.9333333333333333

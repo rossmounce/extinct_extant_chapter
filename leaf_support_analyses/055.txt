@@ -1,0 +1,58 @@
+number of triplets 2925
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+Haimea_ovu	0.9230769230769231
+FSismondia	0.9230769230769231
+FScutellin	0.9969230769230769
+FArachnoid	0.8792307692307693
+Ammotrophu	0.9230769230769231
+FMonostych	0.9230769230769231
+C_annandal	0.99
+C_australa	0.9815384615384616
+C_fervens	0.9815384615384616
+C_japonicu	0.9815384615384616
+C_ochrus	0.9815384615384616
+FC_rosaceu	0.9815384615384616
+C_miniaceu	0.9638461538461538
+C_rangianu	0.96
+C_reticula	0.9676923076923077
+C_humilis	0.9776923076923076
+C_rarispin	0.9776923076923076
+C_latissim	0.99
+C_rotundus	0.99
+C_subdepre	0.99
+C_telurus	0.99
+C_europaci	0.99
+C_eurychor	0.99
+C_raveneli	0.99
+C_euclastu	0.99
+FScutellin	0.9969230769230769
+FPhilipast	0.9969230769230769

@@ -1,0 +1,23 @@
+number of triplets 560
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+Kentriodon	0.8666666666666667
+Delphinodo	0.8666666666666667
+Salumiphoc	0.9904761904761905
+Australith	0.9904761904761905
+Piscolitha	0.9809523809523809
+Haborophoc	0.9904761904761905
+Septemtrio	0.9904761904761905
+Piscolitha	0.9809523809523809
+Phocoena_s	0.9904761904761905
+Phocoena_s	0.9904761904761905
+Phocoena_d	0.9809523809523809
+Phocoena_p	0.9809523809523809
+Phocoenoid	0.9809523809523809
+Neophocaen	0.9904761904761905
+Piscolitha	0.9809523809523809
+Lomacetus	0.9904761904761905

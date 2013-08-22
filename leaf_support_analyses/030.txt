@@ -1,0 +1,25 @@
+number of triplets 680
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+Erinaceus_	0.875
+Nandinia_b	0.875
+Manis_cras	0.9833333333333333
+Manis_pent	0.9833333333333333
+Manis_java	0.9833333333333333
+Smutsia_gi	0.9833333333333333
+Smutsia_te	0.9833333333333333
+Ph.tetrada	0.9833333333333333
+Ph.tricusp	0.9833333333333333
+Patriomani	0.9833333333333333
+Cryptomani	0.9833333333333333
+Necromanis	0.9833333333333333
+Eomanis_wa	0.9833333333333333
+Euromanis_	0.9
+Eurotamand	0.9
+Palaeanodo	0.9916666666666667
+Metacheiro	0.9916666666666667

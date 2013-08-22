@@ -1,0 +1,39 @@
+number of triplets 1540
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+Gavia	0.819047619047619
+Diomedea	0.9095238095238095
+Fregata	0.9095238095238095
+Psadeliae	0.9904761904761905
+Psantarcti	0.9904761904761905
+Aforsteri	0.9904761904761905
+Apatagonic	0.9904761904761905
+FPalaeosbi	0.9904761904761905
+Pspapua	0.9904761904761905
+Megadytesa	0.9904761904761905
+Echrysocom	0.9904761904761905
+Echrysolop	0.9904761904761905
+Epachyrrhy	0.9904761904761905
+FMadrynorn	0.9904761904761905
+Eminor	0.9904761904761905
+Sdemersus	0.9904761904761905
+Smendiculu	0.9904761904761905
+Smagellani	0.9904761904761905
+Shumboldti	0.9904761904761905
+FSurbinai	0.9904761904761905
+FSmegarham	0.9904761904761905
+FParaantar	0.9904761904761905

@@ -1,0 +1,25 @@
+number of triplets 680
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+fossilLept	0.675
+Alepisauru	0.975
+Notolepis	0.975
+fossilIcht	0.975
+fossilBery	0.975
+Melamphaes	0.975
+Polymixia	0.975
+Electrona	0.975
+Lampadena	0.975
+Neoscopelu	0.975
+Scopelengy	0.975
+fossilBeck	0.975
+fossilNeoc	0.975
+fossilSard	0.975
+Chauliodus	0.8916666666666667
+Vinciguerr	0.8916666666666667
+fossilTele	0.8916666666666667

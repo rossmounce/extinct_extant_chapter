@@ -1,0 +1,67 @@
+number of triplets 3654
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+Orussus	0.9285714285714286
+Schlettere	0.9285714285714286
+Orthogonal	0.5062094605283954
+Pristaulac	0.5363339134103214
+Gasterupti	0.532998470706108
+Evania	0.5293729895058759
+Guyotemaim	0.5392430874158423
+Maimetsha	0.5437079224454611
+Cretodinap	0.546204011320288
+Megalava	0.575418798010158
+Megazar	0.575418798010158
+Megallica	0.543918859533476
+Valaa	0.543918859533476
+Dinapsis	0.5766844205382399
+Ettchellsi	0.5766844205382399
+Neodinapsi	0.5449735449735436
+Megalyridi	0.5308759162579766
+Rigel	0.5308759162579766
+P.pumilio	0.6211569899277527
+P.janzeni	0.6535534110284933
+P.minor	0.6536456960044992
+P.oesiensi	0.6315104853310833
+P.succinal	0.6468781310973996
+Ukrainosa	0.6451466891666221
+Rubes	0.61711402907416
+Carminator	0.5346991509782214
+Cryptalyra	0.5346991509782214
+Megalyra	0.45450790135175406
+Megaspilus	0.5757703598235124

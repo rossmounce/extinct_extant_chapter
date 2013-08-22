@@ -1,0 +1,102 @@
+number of triplets 6545
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+Protocetus	0.9411764705882353
+Georgiacet	0.9411764705882353
+Zygorhiza_	0.9982174688057041
+Chonecetus	0.9982174688057041
+Aetiocetus	0.9982174688057041
+Eomysticet	0.9982174688057041
+Ba_mystice	0.9197860962566845
+Ba_montali	0.9197860962566845
+EuBa_glaci	0.9197860962566845
+Balaenula_	0.9197860962566845
+Caperea_ma	0.9197860962566845
+Pelocetus_	0.7759952465834813
+ParietoBa_	0.9792038027332144
+Diorocetus	0.9792038027332144
+Cetotheriu	0.9792038027332144
+Mixocetus_	0.9792038027332144
+Metopocetu	0.9792038027332144
+Eschrichti	0.9792038027332144
+Eschrichti	0.9792038027332144
+Bop_acutor	0.9661319073083775
+Bop_physal	0.9708853238265001
+Bop_muscul	0.9708853238265001
+Bop_boreal	0.9732620320855613
+Bop_edeni	0.9732620320855613
+Bop_omurai	0.9661319073083775
+Mgp_novaea	0.9792038027332144
+Mgp_miocae	0.9792038027332144
+Mgp_hubach	0.9792038027332144
+MPST_24050	0.9792038027332144
+ParaBop_ba	0.9792038027332144
+Bop_boreal	0.9732620320855613
+Plesiocetu	0.9792038027332144
+MCa_240536	0.9792038027332144
+Titanocetu	0.9792038027332144
+Isanacetus	0.7759952465834823

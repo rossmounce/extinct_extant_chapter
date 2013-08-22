@@ -1,0 +1,26 @@
+java -jar phyutility.jar -ls -in ./adephaga/nopruneref.tre > 001.txt
+java -jar phyutility.jar -ls -in ./adnet/nopruneref.tre > 002.txt
+java -jar phyutility.jar -ls -in ./ahyong06/nopruneref.tre > 003.txt
+java -jar phyutility.jar -ls -in ./apesteg/nopruneref.tre > 004.txt
+java -jar phyutility.jar -ls -in ./arango7/nopruneref.tre > 005.txt
+java -jar phyutility.jar -ls -in ./archostemata/nopruneref.tre > 006.txt
+java -jar phyutility.jar -ls -in ./asher03/nopruneref.tre > 007.txt
+java -jar phyutility.jar -ls -in ./babot/nopruneref.tre > 008.txt
+java -jar phyutility.jar -ls -in ./beard/nopruneref.tre > 009.txt
+java -jar phyutility.jar -ls -in ./bisconti/nopruneref.tre > 010.txt
+java -jar phyutility.jar -ls -in ./blag9/nopruneref.tre > 011.txt
+java -jar phyutility.jar -ls -in ./blago4/nopruneref.tre > 012.txt
+java -jar phyutility.jar -ls -in ./bloch/nopruneref.tre > 013.txt
+java -jar phyutility.jar -ls -in ./boess/nopruneref.tre > 014.txt
+java -jar phyutility.jar -ls -in ./bouetel/nopruneref.tre > 015.txt
+java -jar phyutility.jar -ls -in ./bourdon/nopruneref.tre > 016.txt
+java -jar phyutility.jar -ls -in ./brochu10hornedcrocs/nopruneref.tre > 017.txt
+java -jar phyutility.jar -ls -in ./claeson/nopruneref.tre > 018.txt
+java -jar phyutility.jar -ls -in ./clarke9/nopruneref.tre > 019.txt
+java -jar phyutility.jar -ls -in ./deng/nopruneref.tre > 020.txt
+java -jar phyutility.jar -ls -in ./dietz/nopruneref.tre > 021.txt
+java -jar phyutility.jar -ls -in ./diogo7/nopruneref.tre > 022.txt
+java -jar phyutility.jar -ls -in ./diogo8/nopruneref.tre > 023.txt
+java -jar phyutility.jar -ls -in ./evanidae/nopruneref.tre > 024.txt
+java -jar phyutility.jar -ls -in ./fika/nopruneref.tre > 025.txt
+

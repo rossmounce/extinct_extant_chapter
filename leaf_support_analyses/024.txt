@@ -1,0 +1,39 @@
+number of triplets 1540
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+Praeau1aci	0.9047619047619048
+FEvani0ps	0.8595238095238096
+FCretoc1ei	0.3404761904761905
+FBaissinae	0.919047619047619
+Au1acinae	0.919047619047619
+FK0tuje11i	0.919047619047619
+Gasterupti	0.919047619047619
+S0re11evan	0.9047619047619048
+FCretevani	0.942857142857143
+FProcretev	0.942857142857143
+FEoverneva	0.942857142857143
+E0evania	0.9182539682539684
+Vernevania	0.9349206349206348
+Trissevani	0.9357142857142856
+Acanthinev	0.9349206349206348
+Newjerseva	0.9523809523809523
+Iber0evani	0.9523809523809523
+Grima1diva	0.9523809523809523
+Pr0t0parev	0.9523809523809523
+FAndrene1i	0.9047619047619048
+FLebanevan	0.9095238095238095
+FMesevania	0.9095238095238095

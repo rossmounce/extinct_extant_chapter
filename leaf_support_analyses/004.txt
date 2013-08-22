@@ -1,0 +1,30 @@
+number of triplets 969
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+Varanoid_r	0.8888888888888888
+Pachyrhach	0.869281045751634
+Eupodophis	0.869281045751634
+Haasiophis	0.869281045751634
+Wonambi	0.9150326797385621
+Boinae	0.9150326797385621
+Erycinae	0.8954248366013072
+Pythoninae	0.9084967320261438
+Tropidophi	0.9281045751633987
+Acrochordi	0.9281045751633987
+Basal_colu	0.9281045751633987
+Bolyeriida	0.9281045751633987
+Ungaliophi	0.8300653594771242
+Loxocemus	0.7973856209150327
+Xenopeltis	0.7973856209150327
+Anilioidea	0.9934640522875817
+Dinilysia	0.9934640522875817
+Scolecophi	0.9934640522875817
+Najash	0.8888888888888888

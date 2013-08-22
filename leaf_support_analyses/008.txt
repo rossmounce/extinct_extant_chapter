@@ -1,0 +1,42 @@
+number of triplets 1771
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+Bradypus	0.9090909090909091
+Tamandua	0.9090909090909091
+Chaetophra	0.9956709956709957
+Paleuphrac	0.9956709956709957
+Macroeuphr	0.9956709956709957
+Proeuphrac	0.9956709956709957
+Doellotatu	0.9956709956709957
+Euphractus	0.9956709956709957
+Chlamyphor	0.9956709956709957
+Eutatus	0.9956709956709957
+Zaedyus	0.9956709956709957
+Proeutatus	0.9956709956709957
+Vassallia	0.9956709956709957
+Propalaeoh	0.9956709956709957
+Prozaedius	0.9956709956709957
+Priodontes	0.9956709956709957
+Cabassous	0.9956709956709957
+Tolypeutes	0.9956709956709957
+Salla_arma	0.9956709956709957
+Dasypus	0.9956709956709957
+Stegotheri	0.9956709956709957
+Isolated_p	0.9956709956709957
+Peltephilu	0.9956709956709957

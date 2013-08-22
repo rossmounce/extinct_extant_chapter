@@ -1,0 +1,95 @@
+number of triplets 5984
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+Tinamidae	0.9262265512265488
+Anseriform	0.9653679653679661
+Falconidae	0.9675324675324684
+Accipitrid	0.9675324675324684
+StrigidaeT	0.9675324675324684
+Psittacida	0.9489538239538242
+Steatornit	0.9435425685425687
+Caprimulgi	0.9392135642135644
+Nyctibiida	0.9386724386724389
+Aegothelid	0.9446248196248197
+ApodidaeHe	0.9446248196248197
+Trochilida	0.9446248196248197
+Cuculidae	0.9319985569985564
+Trogonidae	0.9319985569985564
+Coliidae	0.9572510822510824
+Sandcoleid	0.9572510822510824
+Passerifor	0.9572510822510824
+UpupidaePh	0.9572510822510824
+Bucerotida	0.9572510822510824
+Pici	0.9572510822510824
+Galbulae	0.9572510822510824
+Alcedinida	0.9496753246753246
+Meropidae	0.9496753246753246
+TodidaeMom	0.9496753246753246
+Coraciidae	0.9496753246753246
+Podargidae	0.8223304473304505
+Halcyornit	0.9653679653679661
+Leptosomid	0.9653679653679661
+Musophagid	0.9653679653679661
+Sagittarii	0.9664502164502172
+Cathartida	0.9664502164502172
+Opisthocom	0.91540404040404
+Quercypsit	0.7615440115440141
+Vastanavis	0.7615440115440141

@@ -1,0 +1,116 @@
+number of triplets 7770
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+Borealosuc	0.9444444444444444
+Pristicham	0.9984126984126984
+Mecistops_	0.9907003233392122
+croc_nilot	0.9557025279247502
+croc_siame	0.9273699294532631
+croc_anthr	0.9280753968253964
+croc_rhomb	0.9605820105820106
+croc_morel	0.9607657260435037
+croc_acutu	0.9610155790711348
+croc_inter	0.961577748383304
+croc_poros	0.9606995884773665
+croc_johns	0.960791446208113
+croc_mindo	0.960791446208113
+croc_novae	0.960548941798942
+croc_palus	0.9594099059376837
+croc_palae	0.9270429159318051
+Euthecodon	0.9889587007642562
+croc_pigot	0.9889587007642562
+ostl_tetra	0.9895392416225749
+ostl_osbor	0.9895392416225749
+Voay_robus	0.9895392416225749
+Rimasuchus	0.9872170781893002
+croc_megar	0.9002241328630217
+Australosu	0.9637161963550852
+Trilophosu	0.9637161963550852
+Kambara_im	0.9637161963550852
+Tomistoma_	0.991493974132863
+Gavialosuc	0.9922876249265138
+Dollosucho	0.991493974132863
+Kentisuchu	0.9922876249265138
+Brachyuran	0.9586566725455611
+croc_acer	0.9586566725455611
+croc_depre	0.9968253968253968
+croc_affin	0.9968253968253968
+Prodiplocy	0.9476190476190476
+Asiatosuch	0.9476190476190476
+Leidyosuch	0.9444444444444444

@@ -1,0 +1,83 @@
+number of triplets 4960
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+Tapirus_te	0.9354838709677419
+Hyrachyus_	0.9354838709677419
+Trigonias_	0.9978494623655914
+Ronzotheri	0.9978494623655914
+Caementodo	0.9384481255448985
+elasm_cauc	0.9377506538796854
+elasm_sibi	0.9377506538796854
+ningx_long	0.9339726823597784
+ningx_eury	0.9337401918047071
+pare_schan	0.9311827956989239
+pare_linxi	0.9333333333333325
+Sinotheriu	0.9251961639058407
+Iranotheri	0.9355419936065085
+Gobitheriu	0.9257773902935181
+hisp_tungu	0.9257773902935181
+hisp_beone	0.9233362394652704
+hisp_matri	0.9233362394652704
+Bugtirhinu	0.928683522231908
+Kenyatheri	0.928683522231908
+Menoceras_	0.9392618424876478
+Dicerather	0.9392618424876478
+Protacerat	0.9392618424876478
+Ceratother	0.7740773031095572
+Diceros_bi	0.7740773031095572
+Coelodonta	0.7740773031095572
+Dicerorhin	0.9392618424876478
+rhino_sond	0.9417029933158954
+rhino_unic	0.9417029933158954
+Brachypoth	0.944144144144143
+Prosantorh	0.944144144144143
+Teleoceras	0.944144144144143
+Plesiacera	0.9392618424876478

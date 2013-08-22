@@ -1,0 +1,95 @@
+number of triplets 5984
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+Outgroup	0.8371212121212122
+Iguanidae	0.9138257575757576
+Leiolepidi	0.915719696969697
+Agaminae	0.915719696969697
+Chamaeleon	0.9138257575757576
+Polyglypha	0.9867424242424242
+Macrocepha	0.9867424242424242
+Sineoamphi	0.9867424242424242
+Xantusiida	0.9867424242424242
+Eublephari	0.9867424242424242
+Diplodacty	0.9867424242424242
+Gekkonines	0.9867424242424242
+Pygopodida	0.9867424242424242
+Dibamidae	0.9867424242424242
+Amphisbaen	0.9867424242424242
+Lacertidae	0.9867424242424242
+Teiidae	0.9867424242424242
+Gymnophtha	0.9867424242424242
+Cordylidae	0.9621212121212122
+Scincidae	0.9621212121212122
+Anguidae	0.9848484848484849
+Xenosaurus	0.9848484848484849
+Shinisauru	0.9848484848484849
+Heloderma	0.9848484848484849
+Lanthanotu	0.9848484848484849
+Varanus	0.9848484848484849
+Aigialosau	0.9848484848484849
+Mosasaurid	0.9848484848484849
+Dolichosau	0.9848484848484849
+Adriosauru	0.9848484848484849
+Pachyrhach	0.9829545454545454
+Haasiophis	0.9829545454545454
+Serpentes	0.9829545454545454
+Xianglong	0.7215909090909091

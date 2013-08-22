@@ -1,0 +1,58 @@
+number of triplets 2925
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+Rhoiptelia	0.5292307692307693
+Alf_costar	0.9446153846153846
+Alf_guanac	0.9446153846153846
+Alf_mannin	0.9446153846153846
+Oreomua_pt	0.9410256410256411
+Oreomunnea	0.9410256410256411
+Palaeooreo	0.9476923076923077
+Engel_roxb	0.9451282051282051
+Engel_spic	0.9451282051282051
+Engel_serr	0.9451282051282051
+Annamocary	0.9700854700854701
+Carya_tonk	0.9700854700854701
+Carya_glab	0.9700854700854701
+Carya_cord	0.9656410256410256
+Carya_illi	0.9656410256410256
+Cruciptera	0.9497435897435896
+Cyclocarya	0.962051282051282
+Pterucarya	0.964102564102564
+Pterocarya	0.964102564102564
+Juglan_cin	0.9676923076923077
+Juglan_man	0.9676923076923077
+Juglan_mic	0.9676923076923077
+Juglan_reg	0.9676923076923077
+Polyptera_	0.9723076923076923
+Palaeoplat	0.9714529914529915
+Platzcarya	0.9714529914529915
+Platycarya	0.9714529914529915

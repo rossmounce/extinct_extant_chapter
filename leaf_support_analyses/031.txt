@@ -1,0 +1,46 @@
+number of triplets 2024
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+Victoriapi	0.9130434782608695
+Pp_lothaga	0.9130434782608695
+Macaca	0.8405797101449275
+Pp_ado	0.951251646903821
+Pl_alemui	0.9565217391304349
+Papio_izod	0.9565217391304349
+Rungwecebu	0.9565217391304349
+Cercocebus	0.9855072463768116
+Lophocebus	0.9459815546772075
+L_cf_albig	0.9459815546772075
+Gorgopithe	0.9459815546772075
+Papio	0.9143610013175241
+Papio_angu	0.9143610013175241
+Theropithe	0.9512516469038214
+T_o_darti	0.9512516469038214
+T_brumpti	0.9486166007905144
+T_baringen	0.9486166007905144
+D_ingens	0.9143610013175241
+P_quadrati	0.9855072463768116
+Mandrillus	0.9855072463768116
+Pr_antiquu	0.9855072463768116
+Pp_broomi	0.9960474308300395
+Pp_jonesi	0.9960474308300395
+Pp_whitei	0.9960474308300395

@@ -1,0 +1,30 @@
+number of triplets 969
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+Polymixia	0.6339869281045751
+FAmphistiu	0.9738562091503268
+Citharus	0.9673202614379085
+Tephrinect	0.9673202614379085
+FEobothus	0.9673202614379085
+FNumidiopl	0.9738562091503268
+FJoleaudic	0.9738562091503268
+Psettodes	0.9738562091503268
+FHeteronec	0.9738562091503268
+Chaetodipt	0.9738562091503268
+Platax	0.9738562091503268
+Scorpis	0.9738562091503268
+Caranx	0.9738562091503268
+Trachinotu	0.9738562091503268
+Monodactyl	0.9738562091503268
+Cyttus	0.9019607843137255
+Zeus	0.9019607843137255
+Neocyttus	0.8954248366013072
+Xenolepidi	0.8954248366013072

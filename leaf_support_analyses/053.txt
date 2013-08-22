@@ -1,0 +1,49 @@
+number of triplets 2300
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+Apsaravis_	0.8061594202898551
+Hesperorni	0.7481884057971014
+Ichthyorni	0.7481884057971014
+Galliforme	0.9692028985507246
+Sylviornit	0.9692028985507246
+Anhimidae	0.9692028985507246
+Anatidae	0.9692028985507246
+Dromornith	0.9692028985507246
+Threskiorn	0.9692028985507246
+Pelecanida	0.9692028985507246
+Balaenicip	0.9692028985507246
+Scopidae	0.9692028985507246
+Ardeidae	0.9692028985507246
+Ciconiidae	0.9692028985507246
+Phaethonti	0.9692028985507246
+Fregatidae	0.9692028985507246
+Phalacroco	0.9692028985507246
+Anhingidae	0.9692028985507246
+Sulidae	0.9692028985507246
+Procellari	0.9692028985507246
+Diomedeida	0.9692028985507246
+Pelagornit	0.9692028985507246
+Rheidae	0.8206521739130435
+Apterygida	0.8206521739130435
+Tinamidae	0.8206521739130435

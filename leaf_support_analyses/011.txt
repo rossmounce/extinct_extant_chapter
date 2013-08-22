@@ -1,0 +1,28 @@
+number of triplets 816
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+Diadocidia	0.5588235294117647
+FPal_sciar	0.9632352941176471
+FPal_afini	0.9632352941176471
+RAsio_asia	0.9632352941176471
+RAsiorrhin	0.9632352941176471
+Labellorrh	0.9558823529411765
+Blagorrhin	0.9558823529411765
+Gracillorh	0.9558823529411765
+Loyugesa_k	0.9632352941176471
+Seguyola_s	0.9632352941176471
+Matileola_	0.9632352941176471
+Lygistorrh	0.9632352941176471
+Lygistorrh	0.9632352941176471
+FArchaeogn	0.9117647058823529
+FLebanogno	0.9117647058823529
+FPlesiogno	0.9117647058823529
+FProtognor	0.9117647058823529
+FLeptognor	0.9117647058823529

@@ -1,0 +1,62 @@
+number of triplets 3276
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+Sandcoleus	0.8575498575498576
+Urocolius_	0.9287749287749287
+Colius_str	0.9287749287749287
+Herpetothe	0.9943019943019943
+Micrastur_	0.9943019943019943
+Falco_spar	0.9943019943019943
+Acanthisit	0.9943019943019943
+Tyrannus_t	0.9943019943019943
+Gracula_re	0.9943019943019943
+Vastanavis	0.9943019943019943
+Messelastu	0.9943019943019943
+Pulchrapol	0.9876543209876544
+Cyril_olso	0.989553656220323
+Serudaptus	0.9876543209876544
+Cyril_colb	0.989553656220323
+Pseudastur	0.9914529914529915
+Quercypsit	0.9943019943019943
+Avolatavis	0.9943019943019943
+Cacatua_su	0.9943019943019943
+Calyptoryn	0.9943019943019943
+Amazona_fa	0.9857549857549858
+Cyanollise	0.9857549857549858
+Lorius_lor	0.9914529914529915
+Trichoglos	0.9914529914529915
+Melopsitta	0.9914529914529915
+Nestor_mer	0.9943019943019943
+Psittacope	0.9943019943019943
+London_Cla	0.9943019943019943

@@ -1,0 +1,116 @@
+number of triplets 7770
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+Astacidea	0.9444444444444444
+FEocarcini	0.9444444444444444
+Homolodrom	0.9984126984126984
+FGoniodrom	0.9984126984126984
+FProsopida	0.9984126984126984
+FBucculent	0.9984126984126984
+FTanidromi	0.9984126984126984
+FLongodrom	0.9984126984126984
+FGlaessner	0.9984126984126984
+FLecythoca	0.9984126984126984
+FKonidromi	0.9984126984126984
+Dromiidae	0.9984126984126984
+Dynomenida	0.9984126984126984
+FDiaulacid	0.9984126984126984
+FXandaros	0.9984126984126984
+Sphaerodro	0.9984126984126984
+FBasinotop	0.9984126984126984
+Homolidae	0.9984126984126984
+Latreillii	0.9984126984126984
+Poupiniida	0.9984126984126984
+FMithracit	0.9984126984126984
+FEtyidae	0.9984126984126984
+FDakotican	0.9984126984126984
+FIbericanc	0.9984126984126984
+Cyclodorip	0.9984126984126984
+Cymonomida	0.9984126984126984
+Phyllotymo	0.9984126984126984
+FGoniochel	0.9984126984126984
+Carcinidae	0.9984126984126984
+Varunidae	0.9984126984126984
+Raninidae	0.9984126984126984
+Symethidae	0.9984126984126984
+FPalaeocor	0.9984126984126984
+FCenomanoc	0.9984126984126984
+FNecrocarc	0.9984126984126984
+FCamarocar	0.9984126984126984
+FTorynommi	0.9984126984126984

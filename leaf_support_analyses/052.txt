@@ -1,0 +1,30 @@
+number of triplets 969
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+Tinamidae	0.8888888888888888
+Galliforme	0.8888888888888888
+Trogonidae	0.9934640522875817
+Podargidae	0.9934640522875817
+Steatornit	0.9934640522875817
+Protocypse	0.9041394335511991
+Aegothelid	0.9673202614379088
+Eocypselid	0.9673202614379088
+Aegialorni	0.9673202614379088
+Argornis	0.925925925925926
+Jungornis	0.9346405228758173
+Trochilida	0.9346405228758173
+Hemiprocni	0.925925925925926
+Scaniacyps	0.9444444444444446
+Cypseloidi	0.9444444444444446
+Apodinae	0.9444444444444446
+Nyctibiida	0.9716775599128543
+Caprimulgi	0.9716775599128543
+Coraciidae	0.9934640522875817

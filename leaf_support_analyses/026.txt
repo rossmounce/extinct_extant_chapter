@@ -1,0 +1,42 @@
+number of triplets 1771
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+Zygorhiza_	0.9090909090909091
+Physeter_c	0.9090909090909091
+Aetiocetus	0.9956709956709957
+Balaena_my	0.9956709956709957
+Balaenula_	0.9956709956709957
+Eubalaena_	0.9956709956709957
+Balaenella	0.9956709956709957
+Morenocetu	0.9956709956709957
+Balaenopte	0.9956709956709957
+mega_novae	0.9956709956709957
+Plesiobala	0.9956709956709957
+Eschrichti	0.9956709956709957
+mega_mioca	0.9956709956709957
+Pelocetus_	0.9956709956709957
+Diorocetus	0.9956709956709957
+Caperea_ma	0.9956709956709957
+herp_bramb	0.9956709956709957
+Nannocetus	0.9956709956709957
+herp_trans	0.9956709956709957
+Piscobalae	0.9956709956709957
+Metopocetu	0.9956709956709957
+Cetotheriu	0.9956709956709957
+Eomysticet	0.9956709956709957

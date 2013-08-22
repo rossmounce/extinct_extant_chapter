@@ -1,0 +1,67 @@
+number of triplets 3654
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+Polypterus	0.9285714285714286
+Acipenser	0.9285714285714286
+Lepisosteu	0.9492630385487528
+Macrosemiu	0.9492630385487528
+Semionotus	0.9492630385487528
+Lepidotes	0.9492630385487528
+Amia	0.9466175359032502
+Caturus	0.9466175359032502
+Macrepisti	0.9466175359032502
+Watsonulus	0.9413265306122448
+Brachydegm	0.9413265306122448
+Hulettia	0.8857709750566893
+Dapedium	0.8857709750566893
+Mesturus	0.8857709750566893
+Elops	0.9095804988662131
+Hiodon	0.9095804988662131
+Pholidopho	0.9095804988662131
+Pachycormu	0.9095804988662131
+Discoserra	0.9810090702947846
+Peltopleur	0.9810090702947846
+Luganoia	0.9810090702947846
+Ebenaqua	0.9810090702947846
+Amphicentr	0.7986583522297814
+Perleidus	0.8510959939531361
+Dipteronot	0.8817082388510951
+Australoso	0.8745275888133026
+Mesopoma	0.9270597127739981
+Pteroniscu	0.9537981859410447
+Mimia	0.9784580498866217

@@ -1,0 +1,58 @@
+number of triplets 2925
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+Am.argotae	0.8523076923076923
+Am.formosa	0.9261538461538461
+FAm.gladif	0.9261538461538461
+Pru.amara	0.5907692307692308
+Pod.disper	0.8984615384615384
+Pru.andina	0.9007692307692308
+Pru.exigua	0.9015384615384615
+Pru.montan	0.9007692307692308
+Pru.meride	0.9061538461538462
+Pru.standl	0.9030769230769231
+Pru.ladei	0.9046153846153846
+Pru.taxifo	0.9046153846153846
+Pru.harmsi	0.9261538461538461
+Pru.fnea	0.9261538461538461
+Pru.ferrug	0.9261538461538461
+FPru.angli	0.6215384615384615
+Pod.elatus	0.92
+Pod.neriif	0.9230769230769231
+FPod.platy	0.9230769230769231
+Pod.smithi	0.92
+FPod.travi	0.9261538461538461
+Pod.hencke	0.9261538461538461
+Pod.latifo	0.9261538461538461
+Pod.salign	0.9261538461538461
+Pod.longif	0.9261538461538461
+FPod.tzaga	0.9261538461538461
+Sciadopity	0.9938461538461538

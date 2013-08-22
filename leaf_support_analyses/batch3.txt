@@ -1,0 +1,26 @@
+java -jar phyutility.jar -ls -in ./manos/nopruneref.tre > 051.txt
+java -jar phyutility.jar -ls -in ./mayr05/nopruneref.tre > 052.txt
+java -jar phyutility.jar -ls -in ./mayr11/nopruneref.tre > 053.txt
+java -jar phyutility.jar -ls -in ./mayrea10/nopruneref.tre > 054.txt
+java -jar phyutility.jar -ls -in ./mihalovic/nopruneref.tre > 055.txt
+java -jar phyutility.jar -ls -in ./oleary/nopruneref.tre > 056.txt
+java -jar phyutility.jar -ls -in ./perrichot09/nopruneref.tre > 057.txt
+java -jar phyutility.jar -ls -in ./pines/nopruneref.tre > 058.txt
+java -jar phyutility.jar -ls -in ./poyato/nopruneref.tre > 059.txt
+java -jar phyutility.jar -ls -in ./pradel/nopruneref.tre > 060.txt
+java -jar phyutility.jar -ls -in ./prideaux/nopruneref.tre > 061.txt
+java -jar phyutility.jar -ls -in ./puertolas/nopruneref.tre > 062.txt
+java -jar phyutility.jar -ls -in ./sigwart/nopruneref.tre > 063.txt
+java -jar phyutility.jar -ls -in ./simm08/nopruneref.tre > 064.txt
+java -jar phyutility.jar -ls -in ./skutchas/nopruneref.tre > 065.txt
+java -jar phyutility.jar -ls -in ./smith10/nopruneref.tre > 066.txt
+java -jar phyutility.jar -ls -in ./smith11/nopruneref.tre > 067.txt
+java -jar phyutility.jar -ls -in ./spaul/nopruneref.tre > 068.txt
+java -jar phyutility.jar -ls -in ./trueb/nopruneref.tre > 069.txt
+java -jar phyutility.jar -ls -in ./vea/nopruneref.tre > 070.txt
+java -jar phyutility.jar -ls -in ./vlihel/nopruneref.tre > 071.txt
+java -jar phyutility.jar -ls -in ./waterfowl/nopruneref.tre > 072.txt
+java -jar phyutility.jar -ls -in ./whitlock10/nopruneref.tre > 073.txt
+java -jar phyutility.jar -ls -in ./worthy/nopruneref.tre > 074.txt
+java -jar phyutility.jar -ls -in ./zhang6/nopruneref.tre > 075.txt
+

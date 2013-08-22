@@ -1,0 +1,42 @@
+number of triplets 1771
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+Enaliarcto	0.8167388167388165
+Pteronarct	0.7012987012987014
+Callorhinu	0.741702741702742
+Desmatopho	0.88023088023088
+Allodesmus	0.88023088023088
+Erignathus	0.88023088023088
+Monachus_m	0.88023088023088
+Prototaria	0.963924963924964
+Proneother	0.963924963924964
+Neotherium	0.9218717790146369
+Kamtschata	0.9218717790146369
+Pseudotari	0.9604205318491034
+Imagotaria	0.9604205318491034
+Pelagiarct	0.9604205318491034
+Pontolis_m	0.9604205318491034
+Dusi_santa	0.9282622139764996
+Dusi_sefto	0.9282622139764996
+Gomphotari	0.922077922077922
+Aivukus_ce	0.9468150896722327
+Protodoben	0.9418676561533705
+Ontocetus_	0.9443413729128015
+Valenictus	0.9468150896722326
+Odobenus_r	0.9468150896722326

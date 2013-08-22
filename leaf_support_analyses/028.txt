@@ -1,0 +1,116 @@
+number of triplets 7770
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+Chelidae	0.8920634920634921
+Pelomedusi	0.946031746031746
+Araripemys	0.946031746031746
+Euraxemydi	0.9968253968253968
+Bothremydi	0.9968253968253968
+Portezuelo	0.9968253968253968
+Bauruemys	0.9968253968253968
+Pricemys	0.9968253968253968
+Lapparente	0.9968253968253968
+Peiropemys	0.9968253968253968
+Podoerythr	0.9888888888888889
+Podoexpans	0.9920634920634921
+Podosextub	0.9920634920634921
+Podolewyan	0.9888888888888889
+Podounifil	0.9888888888888889
+Podovogli	0.9968253968253968
+Turkanemys	0.9968253968253968
+Erymnochel	0.9968253968253968
+Peltocepha	0.9968253968253968
+Neochelys	0.9793650793650793
+Mogharemys	0.9952380952380953
+Brontochel	0.9952380952380953
+Lemurchely	0.9952380952380953
+Shweboemys	0.9952380952380953
+Stereogeny	0.9952380952380953
+Latenemys	0.9952380952380953
+Bairhartst	0.9952380952380953
+Bairvenezu	0.9952380952380953
+Bairsanche	0.9952380952380953
+Bairwinkle	0.9952380952380953
+Cordichely	0.9952380952380953
+Papoulemys	0.9793650793650793
+Dacquemys	0.9968253968253968
+UCMP_42008	0.9968253968253968
+Caninemys	0.9968253968253968
+Hamadachel	0.9968253968253968
+Brasilemys	0.9968253968253968

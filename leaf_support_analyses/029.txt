@@ -1,0 +1,178 @@
+number of triplets 13244
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+current triplet: 7800
+current triplet: 7900
+current triplet: 8000
+current triplet: 8100
+current triplet: 8200
+current triplet: 8300
+current triplet: 8400
+current triplet: 8500
+current triplet: 8600
+current triplet: 8700
+current triplet: 8800
+current triplet: 8900
+current triplet: 9000
+current triplet: 9100
+current triplet: 9200
+current triplet: 9300
+current triplet: 9400
+current triplet: 9500
+current triplet: 9600
+current triplet: 9700
+current triplet: 9800
+current triplet: 9900
+current triplet: 10000
+current triplet: 10100
+current triplet: 10200
+current triplet: 10300
+current triplet: 10400
+current triplet: 10500
+current triplet: 10600
+current triplet: 10700
+current triplet: 10800
+current triplet: 10900
+current triplet: 11000
+current triplet: 11100
+current triplet: 11200
+current triplet: 11300
+current triplet: 11400
+current triplet: 11500
+current triplet: 11600
+current triplet: 11700
+current triplet: 11800
+current triplet: 11900
+current triplet: 12000
+current triplet: 12100
+current triplet: 12200
+current triplet: 12300
+current triplet: 12400
+current triplet: 12500
+current triplet: 12600
+current triplet: 12700
+current triplet: 12800
+current triplet: 12900
+current triplet: 13000
+current triplet: 13100
+current triplet: 13200
+Limulus	0.9534883720930233
+Carcinosco	0.9534883720930233
+Androctonu	0.9988925802879292
+Belisarius	0.9988925802879292
+Siro	0.9988925802879292
+Parasiro	0.9988925802879292
+Stylocellu	0.9988925802879292
+Stylocellu	0.9988925802879292
+Dalquestia	0.9739294942783294
+Odiellus	0.9760981912144683
+Phalangium	0.9760981912144683
+Opilio	0.9760981912144683
+Astrobunus	0.9759020856404557
+Leiobunum	0.9759482281284587
+Hadrobunus	0.9759828349944609
+Nelima	0.9761443337024711
+Caddo	0.976513473606495
+Ischyropsa	0.9756367663344419
+Ceratolasm	0.9756367663344419
+FAmeticos_	0.7512573827980888
+Dicranolas	0.9750715208564056
+Trogulus	0.9750715208564056
+Ortholasma	0.9750715208564056
+Halitherse	0.9750715208564056
+Nemastoma	0.9731566076042831
+Centetosto	0.9763865817644897
+Nipponopsa	0.9763865817644897
+Hesperonem	0.9754868032484326
+Sabacon	0.9754868032484326
+Taracus	0.9754868032484326
+Macrogyion	0.8849437061646457
+Equitius	0.9719684385382074
+Triaenobun	0.9719684385382074
+Zuma	0.9719684385382074
+Bishopella	0.9728105389442612
+Maiorerus	0.9611134182355129
+Scotolemon	0.9598675710594331
+Gnidia	0.9708494832041358
+Pachyloide	0.9708494832041358
+Hoplobunus	0.9708494832041358
+Oncopus	0.9798703396087128
+Gnomulus	0.9798703396087128
+Solifugae	0.9988925802879292
+Pseudoscor	0.9988925802879292

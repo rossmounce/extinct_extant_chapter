@@ -1,0 +1,132 @@
+number of triplets 9139
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+current triplet: 7800
+current triplet: 7900
+current triplet: 8000
+current triplet: 8100
+current triplet: 8200
+current triplet: 8300
+current triplet: 8400
+current triplet: 8500
+current triplet: 8600
+current triplet: 8700
+current triplet: 8800
+current triplet: 8900
+current triplet: 9000
+current triplet: 9100
+Scandentia	0.9473684210526315
+Paromomys	0.9985775248933144
+Ignacius	0.9985775248933144
+Plesiadapi	0.9985775248933144
+Adapis	0.9985775248933144
+Leptadapis	0.9985775248933144
+Cantius	0.9985775248933144
+Notharctus	0.9985775248933144
+Absarokius	0.9953769559032717
+Teilhardin	0.9953769559032717
+Hemiacodon	0.9953769559032717
+Shoshonius	0.9953769559032717
+Eosimias	0.9751066856330014
+Phenacopit	0.9751066856330014
+Bahinia	0.9089615931721194
+Aegyptopit	0.951280227596017
+Moeripithe	0.951280227596017
+Catopithec	0.9541251778093883
+Proteopith	0.9719061166429588
+Aotus	0.9745732574679943
+Callicebus	0.9745732574679943
+Saimiri	0.9745732574679943
+Neosaimiri	0.9745732574679943
+Dolichoceb	0.9745732574679943
+Branisella	0.9767069701280228
+Myanmarpit	0.9727951635846372
+Pondaungia	0.9727951635846372
+Ganlea	0.9727951635846372
+Siamopithe	0.9685277382645804
+Arsinoea	0.9445234708392604
+Apidium	0.9743954480796586
+Parapithec	0.9743954480796586
+Simonsius	0.9743954480796586
+Qatrania	0.9743954480796586
+Biretia	0.9445234708392604
+Tarsius	0.9751066856330014
+Xanthorhys	0.9751066856330014
+Plesiolest	0.9985775248933144
+Purgatoriu	0.9473684210526315

@@ -1,0 +1,36 @@
+number of triplets 1330
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+Ascaphus	0.8105263157894737
+Bombina	0.9052631578947369
+Discogloss	0.9052631578947369
+Chelomophy	0.9894736842105263
+Rhinophryn	0.9894736842105263
+Cordicepha	0.9210526315789473
+Palaeobatr	0.9210526315789473
+Eoxenopoid	0.9842105263157894
+Hymenochir	0.9842105263157894
+Pseudhymen	0.9842105263157894
+Pachycentr	0.9842105263157894
+Singidella	0.9842105263157894
+Pipa	0.9842105263157894
+Llankibatr	0.9842105263157894
+Shelan_lau	0.9842105263157894
+Xenopus_ro	0.9842105263157894
+Silurana	0.9842105263157894
+Xenopus	0.9842105263157894
+Shelania_p	0.9842105263157894
+Saltenia	0.9842105263157894
+Thoracilia	0.9894736842105263

@@ -1,0 +1,49 @@
+number of triplets 2300
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+Sialidae	0.9166666666666666
+Chauliodin	0.9166666666666666
+Trachypach	0.9963768115942029
+Helophorus	0.9963768115942029
+Torridinco	0.9963768115942029
+Micromalth	0.9963768115942029
+Crowsoniel	0.9963768115942029
+FCatiniida	0.9963768115942029
+FSchizopho	0.9963768115942029
+FAdemosyni	0.9963768115942029
+Sikhoteali	0.9963768115942029
+FJurodes	0.9963768115942029
+Priacma	0.9963768115942029
+Paracupes	0.9963768115942029
+Ascioplaga	0.9963768115942029
+Distocupes	0.9963768115942029
+Cupes	0.9963768115942029
+Tenomerga	0.9963768115942029
+Rhipsideig	0.9963768115942029
+Omma	0.9963768115942029
+Tetraphale	0.9963768115942029
+FTriadocup	0.9963768115942029
+FPermocupe	0.9963768115942029
+FRhombocol	0.9963768115942029
+FTshekardo	0.9963768115942029

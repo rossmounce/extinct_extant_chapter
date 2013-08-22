@@ -1,0 +1,46 @@
+number of triplets 2024
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+Echinorhin	0.7628458498023716
+Etmopterus	0.9881422924901185
+FEoetmopte	0.9881422924901185
+Dalatias	0.9881422924901185
+Isistius	0.9881422924901185
+Euprotomic	0.9881422924901185
+Squaliolus	0.9881422924901185
+Euprotomic	0.9881422924901185
+FMicroetmo	0.9881422924901185
+FProetmopt	0.9881422924901185
+FPalaeomic	0.9881422924901185
+Centroscym	0.9881422924901185
+Scymnodon	0.9881422924901185
+Scymnodala	0.9881422924901185
+Oxynotus	0.9881422924901185
+Somniosus	0.9881422924901185
+FCretascym	0.9881422924901185
+Centrophor	0.9881422924901185
+Deania	0.9881422924901185
+Squalus	0.9881422924901185
+FProtosqua	0.9881422924901185
+FProtospin	0.9209486166007905
+Pristiopho	0.9209486166007905
+Squatina	0.9209486166007905

@@ -1,0 +1,62 @@
+number of triplets 3276
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+Astacus	0.7378917378917379
+Acanthacar	0.9757834757834758
+Thymops	0.9757834757834758
+Thymopsis	0.9757834757834758
+Nephropsis	0.9779202279202279
+Nephropide	0.9779202279202279
+Thymopides	0.9715099715099715
+Jagtia	0.9629629629629629
+Eunephrops	0.9886039886039886
+Metanephro	0.9886039886039886
+Paraclytia	0.9886039886039886
+Nephrops	0.9886039886039886
+Palaeoneph	0.9886039886039886
+Hoploparia	0.9886039886039886
+Homarus	0.9886039886039886
+Homarinus	0.9886039886039886
+Oncopareia	0.9886039886039886
+Thaumastoc	0.9886039886039886
+Thaumastoc	0.9886039886039886
+Enoplometo	0.9886039886039886
+Malmuncina	0.9886039886039886
+Uncina	0.9886039886039886
+Eryma	0.9886039886039886
+Neoglyphea	0.9886039886039886
+Chilenopho	0.9280626780626781
+Palaeophob	0.9273504273504274
+Ti11oche1e	0.9280626780626781
+Pseudastac	0.9266381766381766

@@ -1,0 +1,188 @@
+number of triplets 14190
+current triplet: 0
+current triplet: 100
+current triplet: 200
+current triplet: 300
+current triplet: 400
+current triplet: 500
+current triplet: 600
+current triplet: 700
+current triplet: 800
+current triplet: 900
+current triplet: 1000
+current triplet: 1100
+current triplet: 1200
+current triplet: 1300
+current triplet: 1400
+current triplet: 1500
+current triplet: 1600
+current triplet: 1700
+current triplet: 1800
+current triplet: 1900
+current triplet: 2000
+current triplet: 2100
+current triplet: 2200
+current triplet: 2300
+current triplet: 2400
+current triplet: 2500
+current triplet: 2600
+current triplet: 2700
+current triplet: 2800
+current triplet: 2900
+current triplet: 3000
+current triplet: 3100
+current triplet: 3200
+current triplet: 3300
+current triplet: 3400
+current triplet: 3500
+current triplet: 3600
+current triplet: 3700
+current triplet: 3800
+current triplet: 3900
+current triplet: 4000
+current triplet: 4100
+current triplet: 4200
+current triplet: 4300
+current triplet: 4400
+current triplet: 4500
+current triplet: 4600
+current triplet: 4700
+current triplet: 4800
+current triplet: 4900
+current triplet: 5000
+current triplet: 5100
+current triplet: 5200
+current triplet: 5300
+current triplet: 5400
+current triplet: 5500
+current triplet: 5600
+current triplet: 5700
+current triplet: 5800
+current triplet: 5900
+current triplet: 6000
+current triplet: 6100
+current triplet: 6200
+current triplet: 6300
+current triplet: 6400
+current triplet: 6500
+current triplet: 6600
+current triplet: 6700
+current triplet: 6800
+current triplet: 6900
+current triplet: 7000
+current triplet: 7100
+current triplet: 7200
+current triplet: 7300
+current triplet: 7400
+current triplet: 7500
+current triplet: 7600
+current triplet: 7700
+current triplet: 7800
+current triplet: 7900
+current triplet: 8000
+current triplet: 8100
+current triplet: 8200
+current triplet: 8300
+current triplet: 8400
+current triplet: 8500
+current triplet: 8600
+current triplet: 8700
+current triplet: 8800
+current triplet: 8900
+current triplet: 9000
+current triplet: 9100
+current triplet: 9200
+current triplet: 9300
+current triplet: 9400
+current triplet: 9500
+current triplet: 9600
+current triplet: 9700
+current triplet: 9800
+current triplet: 9900
+current triplet: 10000
+current triplet: 10100
+current triplet: 10200
+current triplet: 10300
+current triplet: 10400
+current triplet: 10500
+current triplet: 10600
+current triplet: 10700
+current triplet: 10800
+current triplet: 10900
+current triplet: 11000
+current triplet: 11100
+current triplet: 11200
+current triplet: 11300
+current triplet: 11400
+current triplet: 11500
+current triplet: 11600
+current triplet: 11700
+current triplet: 11800
+current triplet: 11900
+current triplet: 12000
+current triplet: 12100
+current triplet: 12200
+current triplet: 12300
+current triplet: 12400
+current triplet: 12500
+current triplet: 12600
+current triplet: 12700
+current triplet: 12800
+current triplet: 12900
+current triplet: 13000
+current triplet: 13100
+current triplet: 13200
+current triplet: 13300
+current triplet: 13400
+current triplet: 13500
+current triplet: 13600
+current triplet: 13700
+current triplet: 13800
+current triplet: 13900
+current triplet: 14000
+current triplet: 14100
+Cancer	0.9545454545454546
+Romaleon	0.9545454545454546
+FPalaeoxan	0.9989429175475687
+FTumidocar	0.9989429175475687
+FHarpactox	0.9989429175475687
+Carpilius	0.9989429175475687
+Pilumnoide	0.9989429175475687
+Leptodius	0.9989429175475687
+Etisus	0.9989429175475687
+Euphrosyno	0.9989429175475687
+Panopeus	0.9989429175475687
+Eucratopsi	0.9989429175475687
+Domecia	0.9989429175475687
+Trapezia	0.9989429175475687
+Tetralia	0.9989429175475687
+Halimede	0.9989429175475687
+Pilumnus	0.9989429175475687
+Platyxanth	0.9989429175475687
+Homalaspis	0.9989429175475687
+Pseudozius	0.9936575052854123
+Eriphia	0.9936575052854123
+Ozius	0.9978858350951374
+Epixanthus	0.9978858350951374
+Menippe	0.9978858350951374
+Myomenippe	0.9978858350951374
+Dacryopilu	0.9978858350951374
+Hypothalas	0.9989429175475687
+Progeryon	0.9228329809725159
+Mathildell	0.9904862579281184
+Chaceon	0.9904862579281184
+Raymanninu	0.9904862579281184
+Carcinus	0.9904862579281184
+Liocarcinu	0.9904862579281184
+Necora	0.9904862579281184
+Bathynecte	0.9904862579281184
+Nectocarci	0.9904862579281184
+Benthochas	0.9904862579281184
+Eucrate	0.9894291754756871
+Heteroplax	0.9894291754756871
+Carcinopla	0.9894291754756871
+Psopheticu	0.9894291754756871
+FCarinocar	0.9894291754756871
+Chasmocarc	0.9894291754756871
+Trogloplax	0.9894291754756871
+Hexapinus	0.9894291754756871
