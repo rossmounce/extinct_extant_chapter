@@ -1,0 +1,31 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PD"	"Diff MPTs"	"MPTs"	3	"RF"	"PD"	"Diff MPTs"
+2	"F "	"Brychaetus"	0	0	0	3	"fossil"	2.6041027405	8.2398888706	6.8947368421
+3	"F "	"Eohiodon"	6.1764705882	17.5672128565	31	34	"recent"	0.7662337662	2.3859976395	2
+6	"F "	"Huashia"	0	0	0	3				
+7	"F "	"Jiaohichthys"	6.5	21.327033649	5	8				
+8	"F "	"Jinaniehthys"	5.3333333333	14.1481709902	18	21				
+9	"F "	"Jiuquanichthys"	0	0	0	3				
+10	"F "	"Kuntulunia"	9.2592592593	22.0190306791	24	27				
+11	"F "	"Kuyangichthys"	2	9	0	3				
+12	"F "	"Lycoptera"	2	6.6514837167	6	9				
+15	"F "	"Ostariostoma"	0	0	-2	1				
+19	"F "	"Paralycoptera"	6.32	20.1827132142	22	25				
+20	"F "	"phr_erwaustus"	0	0	0	3				
+21	"F "	"phr_queenslandieus"	0	0	0	3				
+22	"F "	"phr_testis"	0	0	0	3				
+25	"F "	"Singida"	0	0	0	3				
+26	"F "	"Sinoglossus"	0	0	0	3				
+27	"F "	"Thaumaturus"	7.5555555556	26.1737040376	15	18				
+28	"F "	"Tongxinichthys"	3.3333333333	14.3895198848	9	12				
+30	"F "	"Xixiaichthys"	1	5.0990195136	3	6				
+1	"R"	"Arapaima"	0	0	0	3				
+4	"R"	"Heterotis"	7.4285714286	19.9016852643	25	28				
+5	"R"	"Hiodon"	0	0	0	3				
+13	"R"	"Mormyridae"	0	0	-1	2				
+14	"R"	"Notopterus"	0	0	-1	2				
+16	"R"	"Osteoglossum"	0	0	0	3				
+17	"R"	"Pantodon"	1	6.3442887702	3	6				
+18	"R"	"Papyrocranus"	0	0	-2	1				
+23	"R"	"spag_forrnosus"	0	0	0	3				
+24	"R"	"spag_leiehardti"	0	0	0	3				
+29	"R"	"Xenomystus"	0	0	-2	1				

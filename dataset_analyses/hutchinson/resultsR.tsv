@@ -1,0 +1,36 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PD"	"Diff in MPTs"	"MPTs"	38	"RF"	"PD"	"Diff in MPTs"
+1	"R"	"Sphenodon"	0.1052631579	0.4275809687	0	38	"FOSSIL"	1.4306142024	5.454695368	-5.3636363636
+2	"R"	"Dibamidae"	16.2368421053	37.4504575651	38	76	"RECENT"	2.3487352347	6.8630238843	15.25
+3	"R"	"Gekkoninae"	0.2631578947	1.4413593043	0	38				
+4	"R"	"Eublephariinae"	0.1052631579	0.4275809687	0	38				
+5	"R"	"Diplodactylinae"	1.1842105263	4.5087090373	38	76				
+6	"R"	"Pygopodidae"	1.3421052632	5.5128162103	38	76				
+7	"R"	"Gymnophthalmidae"	0.1052631579	0.5044578795	0	38				
+8	"R"	"Teiidae"	0.1052631579	0.4275809687	0	38				
+9	"R"	"Lacertidae"	1.1052631579	8.7583680603	38	76				
+10	"R"	"Amphisbaenia"	19.6923076923	43.5426579204	-12	26				
+11	"R"	"Xantusiidae"	4.5	22.2205764408	10	48				
+12	"R"	"Cordylidae"	0.1578947368	0.8275748943	0	38				
+13	"R"	"Scincidae"	0.1052631579	0.4275809687	0	38				
+14	"R"	"Iguanidae"	0	0	-5	33				
+15	"R"	"Leiolepidinae"	0.1818181818	0.8013974496	-5	33				
+16	"R"	"Agaminae"	0.0606060606	0.3090314857	-5	33				
+17	"R"	"Chamaeleonidae"	4.1111111111	18.108401117	-20	18				
+18	"R"	"Anguidae"	0.1052631579	0.5044578795	0	38				
+19	"R"	"Xenosauridae"	0.0526315789	0.2137904843	0	38				
+20	"R"	"Shinisauridae"	0.0526315789	0.2137904843	0	38				
+21	"R"	"Helodermatidae"	0.1052631579	0.506830714	0	38				
+22	"R"	"Lanthanotidae"	0.1578947368	0.7974981091	0	38				
+23	"R"	"Varanidae"	0.1052631579	0.506830714	0	38				
+24	"R"	"Serpentes"	6.4290657439	16.2732435976	251	289				
+25	"F "	"Tikiguania"	0	0	-33	5				
+26	"F "	"Polyglyphanodon"	7.3846153846	27.293295488	-25	13				
+27	"F "	"Macrocephalosaurus"	6.0877192982	21.616475682	76	114				
+28	"F "	"Sineoamphisbaena"	0.2424242424	1.0732568555	-5	33				
+29	"F "	"Marmoretta"	0	0	-14	24				
+30	"F "	"Clevosaurus"	1.0769230769	5.5384787683	-12	26				
+31	"F "	"Gephyrosaurus"	0	0	-22	16				
+32	"F "	"Diphyodontosaurus"	0.1333333333	0.7508228094	-8	30				
+33	"F "	"Planocephalosaurus"	0.6538461538	3.0086982468	14	52				
+34	"F "	"Palaeopleurosaurus"	0.1578947368	0.7206211983	0	38				
+35	"F "	"Kuehneosauridae"	0	0	-30	8				

@@ -1,0 +1,37 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PF"	"Diff MPTs"	"MPTs"	432	"RF"	"PD"	"Diff MPTs"
+1	"F "	"Pristichampsus_vorax"	7.787037037	18.2595039503	0	432	"fossil"			
+2	"F "	"Leidyosuchus_canadensis"	8.9074074074	20.3323215164	432	864	"recent"			
+15	"F "	"croc_palaeindicus"	7.1477272727	18.5349097186	-256	176				
+16	"F "	"croc_anthropophagus"	6.125	16.1990682189	-384	48				
+17	"F "	"Euthecodon_arambourgii"	7.712962963	18.7275693326	0	432				
+20	"F "	"Voay_robustus"	8.5436507937	20.9268727804	72	504				
+21	"F "	"Rimasuchus_lloydi"	6.7962962963	17.5230308633	0	432				
+22	"F "	"croc_pigotti"	7.9259259259	19.4278838437	0	432				
+23	"F "	"croc_megarhinus"	7.2407407407	18.3357472994	-216	216				
+24	"F "	"Australosuchus_clarkae"	7.6157407407	18.5469187869	0	432				
+25	"F "	"Kambara_implexidens"	7.6342592593	18.9454774643	0	432				
+26	"F "	"Trilophosuchus_rackhami"	7.8888888889	19.2181753012	108	540				
+28	"F "	"Gavialosuchus_antiquus"	6.6296296296	17.1854277946	-324	108				
+29	"F "	"Kentisuchus_spenceri"	6.8148148148	17.3480801414	-324	108				
+30	"F "	"Dollosuchoides_densmorei"	7.2037037037	18.6823955052	-216	216				
+31	"F "	"Brachyuranochampsa_eversolei"	6.6435185185	17.6471540896	0	432				
+32	"F "	"croc_depressifrons"	7.6527777778	18.530153233	0	432				
+33	"F "	"croc_acer"	6.5416666667	17.1528006635	0	432				
+34	"F "	"croc_affinis"	8.2558922559	20.6979552582	162	594				
+35	"F "	"Asiatosuchus_germanicus"	8.0740740741	20.1533326812	-135	297				
+36	"F "	"Prodiplocynodon_langi"	6.8148148148	17.2743179944	-216	216				
+3	"R"	"Mecistops_cataphractus"	12.3310810811	31.8914322201	456	888				
+4	"R"	"croc_niloticus"	6.9375	18.0371308612	-304	128				
+5	"R"	"croc_porosus"	5.5185185185	15.5450736425	0	432				
+6	"R"	"croc_rhombifer"	6.1875	17.1707170619	-48	384				
+7	"R"	"croc_acutus"	6.6666666667	17.5571787101	0	432				
+8	"R"	"croc_palustris"	10.5354477612	28.6602248884	640	1072				
+9	"R"	"croc_siamensis"	6.9722222222	17.4258635037	-288	144				
+10	"R"	"croc_intermedius"	5.7125	15.7649052457	-272	160				
+11	"R"	"croc_johnstoni"	5.75	15.7423149081	0	432				
+12	"R"	"croc_mindorensis"	5.5555555556	15.4837252586	0	432				
+13	"R"	"croc_novaeguineae"	5.5555555556	15.5077524277	0	432				
+14	"R"	"croc_moreletii"	6.4398148148	17.1938692182	0	432				
+18	"R"	"ostl_tetraspis"	8.0925925926	19.2410242884	0	432				
+19	"R"	"ostl_osborni"	7.873015873	20.3414308128	72	504				
+27	"R"	"Tomistoma_schlegelii"	6.9074074074	17.0839595587	-324	108				

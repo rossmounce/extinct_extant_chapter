@@ -1,0 +1,47 @@
+"Order"	"Fossil/Recent"	"Taxon"	"RF"	"PD"	"MPTs"	"Diff MPTs (relative to full dataset)"	"Original MPTs"			
+18	"F"	"Nippozinella"	2.0578034682	10.3795074722	169	-1	170	"RF"	"PD"	"Diff MPTs"
+41	"F"	"MixOrt_dominicana"	2.6783625731	13.0990390298	234	64	"Fossil"	3.6633318314	15.2150103112	680.875
+42	"F"	"MixOrt_kozari"	2.6588235294	12.7896128915	227	57	"Recent"	3.7845546428	15.7130548959	187.5263157895
+43	"F"	"New_succini"	13.1770079939	38.8274349804	1002	832				
+44	"F"	"Arc_antiqua"	2.0895522388	10.220704227	1211	1041				
+45	"F"	"Arc_baltica"	2.2647058824	12.5654407086	1720	1550				
+46	"F"	"BurmOrt_kotejai"	2.1437125749	11.815792968	860	690				
+47	"F"	"BurmOrt_insolita"	2.2366863905	12.0225502118	1384	1214				
+2	"R"	"Pseudococcus_longispinus"	2.5325443787	13.2353538788	170	0				
+3	"R"	"Icerya_purchasi"	2.8632478632	13.3248878787	170	0				
+4	"R"	"Puto_yuccae"	3.2511013216	13.2430163366	6	-164				
+5	"R"	"New_floccosa"	6.2235528942	19.6941720834	170	0				
+6	"R"	"New_morrisoni"	4.6919900908	16.2287524457	1670	1500				
+7	"R"	"New_monikae"	7	23.1004543231	2702	2532				
+8	"R"	"New_caledoniensis"	3.8651162791	14.5510207858	1192	1022				
+9	"R"	"New_minima"	5.7052023121	17.78068934	176	6				
+10	"R"	"New_americana"	2.4941176471	12.0381494002	173	3				
+11	"R"	"New_africana"	1.0823529412	5.6267754779	1038	868				
+12	"R"	"Jermycoccus_boliviensis"	8.3333333333	32.1655972162	229	59				
+13	"R"	"Neom_brazilana"	2.0117647059	9.8847309728	170	0				
+14	"R"	"Neom_machupicchui"	6.5005988024	28.2873278924	48	-122				
+15	"R"	"NeoNippon_regina"	8.7453737972	29.5002357199	71	-99				
+16	"R"	"Nippon_ardisiae"	7.0402684564	23.9070880655	15	-155				
+17	"R"	"Nippon_obscura"	2.9318181818	14.2419133081	118	-52				
+19	"R"	"Nippoz_guadalcanalia"	6.6801541426	21.5870898201	5	-165				
+20	"R"	"Arc_occidentalis"	3.6943231441	15.0986501139	186	16				
+21	"R"	"Arc_pseudoccidentalis"	2.8	13.3635275577	10	-160				
+22	"R"	"Arc_cataphracta"	2.6666666667	12.8258815769	13	-157				
+23	"R"	"Gra_graminis"	2.5070422535	12.5138157922	84	-86				
+24	"R"	"Gra_tillandsiae"	2.4	13.5826042605	79	-91				
+25	"R"	"Gra_minor"	2.7796610169	13.3949335413	10	-160				
+26	"R"	"Ort_urticae"	2	9.7140586949	170	0				
+27	"R"	"Ort_ambrosicola"	2.9677419355	13.6367610338	3	-167				
+28	"R"	"Ort_annae"	3.4	15.9357454184	190	20				
+29	"R"	"Ort_graminicola"	2	12.3372279348	167	-3				
+30	"R"	"Ort_newcomeri"	1.7380952381	9.2844419906	519	349				
+31	"R"	"Prae_artemisiae"	2.3037974684	11.5691546587	170	0				
+32	"R"	"Prae_praelonga"	2.4	11.2213752588	344	174				
+33	"R"	"MatilOrt_angolaensis"	2.4117647059	12.2094800095	11	-159				
+34	"R"	"InsignOrt_insignis"	2	6.095339974	171	1				
+35	"R"	"Orcoccus_madecassa"	3.9684210526	17.1404704814	170	0				
+36	"R"	"Ormameti_guineensis"	2.4191616766	11.8674995184	2627	2457				
+37	"R"	"Or_vejdovskyi"	5.9653179191	23.1892786729	67	-103				
+38	"R"	"Mixorthexia_reynei"	2.3058823529	11.995433714	136	-34				
+39	"R"	"MixOrt_monticola"	4.5872093023	19.2623910955	167	-3				
+40	"R"	"AcropygOrt_williamsi"	4.5454545455	22.4607597995	169	-1				

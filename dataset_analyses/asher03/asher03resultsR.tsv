@@ -1,0 +1,68 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PD"	"Diff MPTs"	"MPTs"	8	"RF"	"PD"	"Diff MPTs"
+1	"R"	"aaMacropus"	9	47.692990145	0	8	"fossil"	9.3119263923	36.6139255191	44.9230769231
+2	"R"	"aaVombatus"	37.3076923077	123.2780226585	96	104	"recent"	12.2661538979	45.8622826112	64.6071428571
+3	"R"	"Aplodontia"	29.2608695652	97.6841323783	84	92				
+4	"R"	"Castor"	19	74.0193419377	44	52				
+5	"R"	"Cavia"	0	0	0	8				
+6	"R"	"Chinchilla"	0	0	0	8				
+7	"R"	"Cynocephalus"	0	0	-4	4				
+8	"R"	"Dasyprocta"	6.6666666667	33.3446174724	16	24				
+9	"R"	"Dipodomys"	31.0810810811	98.9705365782	288	296				
+10	"R"	"Echimys"	12	46.0868744872	0	8				
+11	"R"	"Erethizon"	3.1	17.6442440431	32	40				
+12	"R"	"Hydrochoerus"	0	0	0	8				
+13	"R"	"Lepus"	0	0	-4	4				
+14	"R"	"Marmota"	37.4480874317	162.240312264	724	732				
+15	"R"	"Massoutiera"	35.8571428571	144.5470901982	104	112				
+16	"R"	"Mus"	0	0	0	8				
+17	"R"	"Myocastor"	3.3333333333	18.6012086022	16	24				
+18	"R"	"Glis"	12	38.9615194776	0	8				
+19	"R"	"Ochotona"	0	0	-4	4				
+20	"R"	"Oryctolagus"	0	0	0	8				
+21	"R"	"Petrodromus"	0	0	0	8				
+22	"R"	"Rattus"	0	0	0	8				
+23	"R"	"Rhynchocyon"	30.8333333333	99.3420781975	184	192				
+24	"R"	"Sciurus"	0	0	0	8				
+25	"R"	"Sylvilagus"	0	0	0	8				
+26	"R"	"Thomomys"	45.5641025641	105.7860858273	226	234				
+27	"R"	"Thryonomys"	7	38.127395925	8	16				
+28	"R"	"Tupaia"	24	137.8174629206	-1	7				
+29	"F "	"zzAdapis"	0	0	0	8				
+30	"F "	"zzAnagale"	29.5915492958	106.3212208327	276	284				
+31	"F "	"zzAnagalopsis"	28.3333333333	98.6449984734	124	132				
+32	"F "	"zzAsioryctes"	4	23.4520787991	-4	4				
+33	"F "	"zzBarunlestes"	14.5714285714	71.8628806612	6	14				
+34	"F "	"zzCocomys"	0	0	0	8				
+35	"F "	"zzCricetops"	0	0	0	8				
+36	"F "	"zzEurymylus"	0	0	0	8				
+37	"F "	"zzFlorentiamys"	0	0	0	8				
+38	"F "	"zzGomphos"	57.3870967742	169.7464670527	54	62				
+39	"F "	"zzGregorymys"	0	0	0	8				
+40	"F "	"zzHeomys"	0	0	0	8				
+41	"F "	"zzHyopsodus"	12	65.4522726878	-4	4				
+42	"F "	"zzIncamys"	2	13.8564064606	0	8				
+43	"F "	"zzKennalestes"	4.5	24.6423255908	8	16				
+44	"F "	"zzKulbeckia"	0	0	-4	4				
+45	"F "	"zzLeptictis"	21.6258064516	89.7276465172	302	310				
+46	"F "	"zzMatutinia"	0	0	0	8				
+47	"F "	"zzMimolagus"	0	0	-4	4				
+48	"F "	"zzMimotona"	0	0	-4	4				
+49	"F "	"zzNeoreomys"	4	20.5548047911	8	16				
+50	"F "	"zzNotharctus"	1.3333333333	6.5489609015	4	12				
+51	"F "	"zzPalaeolagus"	7.8421052632	44.9871143626	30	38				
+52	"F "	"zzParadjidaumo"	45.5988023952	165.6273810264	660	668				
+53	"F "	"zzParamys"	0	0	0	8				
+54	"F "	"zzParaphiomys"	3	25.2198635902	8	16				
+55	"F "	"zzPhenacodus"	4.2857142857	25.0470916676	20	28				
+56	"F "	"zzPlesiadapis"	0	0	0	8				
+57	"F "	"zzProlagus"	0	0	-4	4				
+58	"F "	"zzPseudictops"	0	0	0	8				
+59	"F "	"zzReithroparamys"	0	0	0	8				
+60	"F "	"zzRhombomylus"	13.6666666667	59.2814990125	16	24				
+61	"F "	"zzSciuravus"	0	0	0	8				
+62	"F "	"zzSinomylus"	19	71.6056618891	-4	4				
+63	"F "	"zzTataromys"	32.2777777778	96.864274722	136	144				
+64	"F "	"zzTribosphenomys"	1	13.9642400438	8	16				
+65	"F "	"zzTsaganomys"	50.1515151515	176.3852753859	124	132				
+66	"F "	"zzUkhaatherium"	4	31.336879232	-4	4				
+67	"F "	"zzZalambdalestes"	3	26.8137515455	0	8				

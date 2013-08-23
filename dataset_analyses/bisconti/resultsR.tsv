@@ -1,0 +1,35 @@
+"Order"	"Fossil/Recent"	"Taxa"	"RF"	"PD"	"Diff MPTs"	"MPTs"	6	"RF"	"PD"	"Diff MPTs"
+1	"F "	"Georgiacetus_vogtlensis"	2	9.2756649114	0	6	"FOSSIL"	3.0176767677	11.453901585	1.2727272727
+2	"F "	"Zygorhiza_kochii"	2	8	-3	3	"RECENT"	2.7793650794	10.4244379964	-0.5
+3	"F "	"Chonecetus_goedertorum"	1.6666666667	6.6246692913	0	6				
+4	"F "	"Aetiocetus_polydentatus"	1.6666666667	6.6246692913	0	6				
+5	"F "	"Eomysticetus_whitmorei"	3.3333333333	11.7985236271	0	6				
+7	"F "	"Ba_montalionis"	2.6666666667	10.4600970253	0	6				
+9	"F "	"Balaenula_astensis"	2	7.3010218336	0	6				
+11	"F "	"Pelocetus_calvertensis"	1.3333333333	5.3333333333	-3	3				
+12	"F "	"ParietoBa_palmeri"	2.6666666667	12.72340695	-3	3				
+13	"F "	"Isanacetus_laticephalus"	1.3333333333	5.3333333333	0	6				
+14	"F "	"Diorocetus_hiatus"	6.3333333333	21.0389610762	0	6				
+15	"F "	"Cetotherium_rathkei"	2.8333333333	10.4673312166	6	12				
+16	"F "	"Mixocetus_elysius"	3.1666666667	12.6899282559	6	12				
+17	"F "	"Titanocetus_sammarinensis"	6.2222222222	23.5075865803	3	9				
+18	"F "	"Metopocetus_durinasus"	2.3333333333	9.0625721243	0	6				
+27	"F "	"Mgp_hubachi"	4.3333333333	16.0444390302	18	24				
+28	"F "	"Mgp_miocaena"	2	8.5744789421	0	6				
+29	"F "	"Plesiocetus_cortesii"	3.8333333333	14.6978379542	6	12				
+30	"F "	"MPST_240505"	6	20.0889148692	-2	4				
+32	"F "	"ParaBop_baulinensis"	2	9.6467983586	4	10				
+33	"F "	"MCa_240536"	4	12.6602540378	-4	2				
+34	"F "	"Eschrichtioides_gastaldii"	2.6666666667	10.0320128274	0	6				
+6	"R"	"Ba_mysticetus"	2.3333333333	8.5102873745	0	6				
+8	"R"	"EuBa_glacialis"	1.3333333333	4.6343551669	0	6				
+10	"R"	"Caperea_marginata"	2.3333333333	10.3428470781	0	6				
+19	"R"	"Eschrichtius_robustus"	2.6666666667	10.0637053871	0	6				
+20	"R"	"Bop_acutorostrata"	2	10.2649820431	-4	2				
+21	"R"	"Bop_physalus"	3	12.2462112512	-4	2				
+22	"R"	"Bop_musculus"	3	10.9515327504	-2	4				
+23	"R"	"Bop_borealis"	2	7.6761804115	0	6				
+24	"R"	"Bop_edeni"	3.4	10.8658460501	4	10				
+25	"R"	"Bop_omurai"	2	8	-4	2				
+26	"R"	"Mgp_novaeangliae"	5	18.1632757886	-4	2				
+31	"R"	"Bop_borealina"	4.2857142857	13.374032655	8	14				
