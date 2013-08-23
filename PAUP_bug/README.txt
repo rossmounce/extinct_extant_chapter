@@ -8,4 +8,6 @@ gettrees file=REDstranderson.nexorg.head.strict mode=3;
 gettrees file=REDstranderson.nexorg.tail.strict mode=7;
 treedist metric=agd1;
 
-#symmdiff = 45
+#Segmentation fault (core dumped)
+
+#The symmdiff for the two trees is 45 in case you were wondering...
