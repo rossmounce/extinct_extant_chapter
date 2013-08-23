@@ -1,0 +1,41 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Thu Sep  8 05:04:33 2011]
+[!
+>Consensus of 660 trees
+>
+>Source of trees from which consensus(es) calculated...
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      143 characters are excluded
+>      Of the remaining 76 included characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        2 characters are parsimony-uninformative
+>        Number of (included) parsimony-informative characters = 74
+>    Gaps are treated as "missing"
+>    Multistate taxa interpreted as uncertainty
+>  Starting tree(s) obtained via stepwise addition
+>  Addition sequence: random
+>    Number of replicates = 10
+>    Starting seed = 1176199652
+>  Number of trees held at each step during stepwise addition = 1
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR)
+>  Steepest descent option not in effect
+>  'MaxTrees' setting = 10000 (will not be increased)
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  Topological constraints not enforced
+>  Trees are unrooted
+>
+>Heuristic search completed
+>   Total number of rearrangements tried = 2.4369e+09
+>   Score of best tree(s) found = 354
+>   Number of trees retained = 660
+>   Note: Effectiveness of search may have been diminished due to tree-buffer
+>         overflow.
+>   Time used = 00:09:41 (CPU time = 00:09:38.8)
+]
+	tree Strict = [&U] (Acanthostega,(Proterogyrinus,(((((((((((Tuditanus,Stegotretus),Pelodosotis),Saxonerpeton),Pantylus),Asaphestera),Batropetes),((Cardiocephalus_peabodyi,Euryodus_primus),(Rhynchonkos,Eocaecilia))),Micraroter),Euryodus_dalyae),Utaherpeton),(Seymouria_baylorensis,Limnoscelis))),((Balanerpeton,Dendrerpeton),((((((Hapsidoparion,Microbrachis),Brachydectes),Adelogyrinus),((Sauropleura_scalaris,(Ptyonius,Urocordylus,Scincosaurus),((Keraterpeton_galvani,Diceratosaurus),(Batrachiderpeton,(Diplocaulus_magnicornis,Diploceraspis)))),(Oestocephalus,Phlegethontia))),(Salamanders,Albanerpetontidae),(Frogs,Triadobatrachus)),Doleserpeton,Gerobatrachus,Platyrhinops),Greererpeton,(Branchiosauridae,Micromelerpetontidae),Ecolsonia,Acheloma,Eryops,Micropholis,Eoscopus,Tambachia,Amphibamus));
+end;
